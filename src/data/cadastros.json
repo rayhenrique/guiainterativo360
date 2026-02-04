@@ -1,0 +1,1037 @@
+{
+    "moduleId": "cadastros",
+    "moduleTitle": "Guia de Preenchimento | Ministério da Saúde",
+    "subtitle": "Guia de Preenchimento do Prontuário Eletrônico e-SUS APS e Aplicativos",
+    "content": {
+        "cadastroIndividual": {
+            "title": "Cadastro Individual",
+            "notaTecnica": "Nota Técnica Nº 30/2025-CGESCO/DESCO/SAPS/MS",
+            "portariaBase": "Portaria de Consolidação GM/MS nº 6, de 28 de setembro de 2017 (redação dada pela Portaria GM/MS nº 3.493, de 10 de abril de 2024)",
+            "notaMetodologica": "Nota Metodológica N° 0045262248/2024",
+            "descricao": "O componente de vínculo e acompanhamento territorial tem como objetivo fortalecer o processo de territorialização, bem como a análise epidemiológica e demográfica da população adscrita e o cuidado em saúde realizado pelas equipes da Atenção Primária. Isso ocorre por meio da qualificação dos cadastros e da melhoria no atendimento aos cidadãos. Além disso, o componente favorece o aperfeiçoamento dos processos de gestão e monitoramento, além de estimular a participação e a avaliação dos usuários. Dessa maneira, contribui para reduzir as barreiras de acesso e elevar a qualidade da atenção prestada à comunidade sob responsabilidade das equipes.",
+            "equipesResponsaveis": [
+                "eSF",
+                "eAP",
+                "eSB",
+                "eMulti"
+            ],
+            "conceitos": [
+                {
+                    "nomenclatura": "Pessoa cadastrada",
+                    "conceito": "Aquela que possui cadastro individual (Modelo de Informação de Cadastro Individual - MICI) e cumpre integralmente os requisitos de validação do Siaps."
+                },
+                {
+                    "nomenclatura": "Pessoa com cadastro completo",
+                    "conceito": "Aquela que possui cadastro individual (MICI) e cadastro domiciliar e territorial (Modelo de Informação de Cadastro Domiciliar e Territorial - MICDT) e atende integralmente aos requisitos de validação do Siaps."
+                }
+            ],
+            "avisos": [
+                "Destaca-se que o cadastro rápido, simplificado no módulo do cidadão, não é considerado válido para aferição deste componente.",
+                "Serão considerados: Cadastro e acompanhamento, realizados pelas eSF, eAP, eSB e eMulti, das pessoas vinculadas às eSF e às eAP."
+            ]
+        },
+        "acompanhamentoTerritorio": {
+            "title": "Cadastro Individual - Acompanhamento Território",
+            "passoAPasso": [
+                {
+                    "passo": 1,
+                    "instrucao": "Para iniciar um cadastro, será necessário realizar a escolha da microárea; ao selecionar um logradouro será possível visualizar os domicílios cadastrados."
+                },
+                {
+                    "passo": 2,
+                    "instrucao": "Ao identificar o domicílio para cadastro, deverá clicar na lupa onde será possível visualizar o domicílio que o profissional deseja incluir a família."
+                },
+                {
+                    "passo": 3,
+                    "instrucao": "Após o preenchimento e conferência das informações, será necessário incluir a quantidade de moradores e condições de moradia."
+                },
+                {
+                    "passo": 4,
+                    "instrucao": "É importante atualizar os contatos telefônicos.",
+                    "destaque": true
+                },
+                {
+                    "passo": 5,
+                    "instrucao": "Ao selecionar \"adicionar família ao imóvel\", preencher os dados solicitados pelo sistema incluindo o Responsável familiar."
+                },
+                {
+                    "passo": 6,
+                    "instrucao": "Após cadastrar a família, será possível incluir as pessoas que pertencem àquela família."
+                },
+                {
+                    "passo": 7,
+                    "instrucao": "É necessário vincular o cidadão à equipe. No mesmo local, após incluir as pessoas à família, ao selecionar os três pontos, clicar em \"Atualizar cidadão\".",
+                    "destaque": true
+                },
+                {
+                    "passo": 8,
+                    "instrucao": "É importante conferir se a equipe vinculada está correta. Caso necessite alterar, selecionar \"Alterar vínculo\", salvar e então o cidadão estará devidamente vinculado."
+                },
+                {
+                    "passo": 9,
+                    "instrucao": "O telefone celular é um dado obrigatório para os cadastros.",
+                    "destaque": true
+                }
+            ]
+        },
+        "profissionaisCadastroIndividual": {
+            "title": "Tabela de Profissionais que possuem acesso ao Cadastro Individual",
+            "cbos": [
+                {
+                    "codigo": "515105",
+                    "nome": "AGENTE COMUNITÁRIO DE SAÚDE"
+                },
+                {
+                    "codigo": "515310",
+                    "nome": "AGENTE DE AÇÃO SOCIAL"
+                },
+                {
+                    "codigo": "515140",
+                    "nome": "AGENTE DE COMBATE ÀS ENDEMIAS"
+                },
+                {
+                    "codigo": "352210",
+                    "nome": "AGENTE DE SAÚDE PÚBLICA"
+                },
+                {
+                    "codigo": "515130",
+                    "nome": "AGENTE INDÍGENA DE SANEAMENTO"
+                },
+                {
+                    "codigo": "515124",
+                    "nome": "AGENTE INDÍGENA DE SAÚDE"
+                },
+                {
+                    "codigo": "226310",
+                    "nome": "ARTETERAPEUTA"
+                },
+                {
+                    "codigo": "411010",
+                    "nome": "ASSISTENTE ADMINISTRATIVO"
+                },
+                {
+                    "codigo": "251605",
+                    "nome": "ASSISTENTE SOCIAL"
+                },
+                {
+                    "codigo": "322230",
+                    "nome": "AUXILIAR DE ENFERMAGEM"
+                },
+                {
+                    "codigo": "322250",
+                    "nome": "AUXILIAR DE ENFERMAGEM DA ESTRATEGIA DE SAUDE DA FAMILIA"
+                },
+                {
+                    "codigo": "322415",
+                    "nome": "AUXILIAR EM SAÚDE BUCAL"
+                },
+                {
+                    "codigo": "322430",
+                    "nome": "AUXILIAR EM SAÚDE BUCAL DA ESTRATÉGIA DE SAÚDE DA FAMÍLIA"
+                },
+                {
+                    "codigo": "223204",
+                    "nome": "CIRURGIÃO DENTISTA - AUDITOR"
+                },
+                {
+                    "codigo": "223208",
+                    "nome": "CIRURGIÃO DENTISTA - CLÍNICO GERAL"
+                },
+                {
+                    "codigo": "223280",
+                    "nome": "CIRURGIÃO DENTISTA - DENTÍSTICA"
+                },
+                {
+                    "codigo": "223284",
+                    "nome": "CIRURGIÃO DENTISTA - DISFUNÇÃO TEMPOROMANDIBULAR E DOR OROFACIAL"
+                },
+                {
+                    "codigo": "223212",
+                    "nome": "CIRURGIÃO DENTISTA - ENDODONTISTA"
+                },
+                {
+                    "codigo": "223216",
+                    "nome": "CIRURGIÃO DENTISTA - EPIDEMIOLOGISTA"
+                },
+                {
+                    "codigo": "223220",
+                    "nome": "CIRURGIÃO DENTISTA - ESTOMATOLOGISTA"
+                },
+                {
+                    "codigo": "223224",
+                    "nome": "CIRURGIÃO DENTISTA - IMPLANTODONTISTA"
+                },
+                {
+                    "codigo": "223228",
+                    "nome": "CIRURGIÃO DENTISTA - ODONTOGERIATRA"
+                },
+                {
+                    "codigo": "223276",
+                    "nome": "CIRURGIÃO DENTISTA - ODONTOLOGIA DO TRABALHO"
+                },
+                {
+                    "codigo": "223288",
+                    "nome": "CIRURGIÃO DENTISTA - ODONTOLOGIA PARA PACIENTES COM NECESSIDADES ESPECIAIS"
+                },
+                {
+                    "codigo": "223232",
+                    "nome": "CIRURGIÃO DENTISTA - ODONTOLOGISTA LEGAL"
+                },
+                {
+                    "codigo": "223236",
+                    "nome": "CIRURGIÃO DENTISTA - ODONTOPEDIATRA"
+                },
+                {
+                    "codigo": "223240",
+                    "nome": "CIRURGIÃO DENTISTA - ORTOPEDISTA E ORTODONTISTA"
+                },
+                {
+                    "codigo": "223244",
+                    "nome": "CIRURGIÃO DENTISTA - PATOLOGISTA BUCAL"
+                },
+                {
+                    "codigo": "223248",
+                    "nome": "CIRURGIÃO DENTISTA - PERIODONTISTA"
+                },
+                {
+                    "codigo": "223252",
+                    "nome": "CIRURGIÃO DENTISTA - PROTESIÓLOGO BUCOMAXILOFACIAL"
+                },
+                {
+                    "codigo": "223256",
+                    "nome": "CIRURGIÃO DENTISTA - PROTESISTA"
+                },
+                {
+                    "codigo": "223260",
+                    "nome": "CIRURGIÃO DENTISTA - RADIOLOGISTA"
+                },
+                {
+                    "codigo": "223264",
+                    "nome": "CIRURGIÃO DENTISTA - REABILITADOR ORAL"
+                },
+                {
+                    "codigo": "223268",
+                    "nome": "CIRURGIÃO DENTISTA - TRAUMATOLOGISTA BUCOMAXILOFACIAL"
+                },
+                {
+                    "codigo": "223272",
+                    "nome": "CIRURGIÃO DENTISTA DE SAÚDE COLETIVA"
+                },
+                {
+                    "codigo": "223293",
+                    "nome": "CIRURGIÃO-DENTISTA DA ESTRATÉGIA DE SAÚDE DA FAMÍLIA"
+                },
+                {
+                    "codigo": "412110",
+                    "nome": "DIGITADOR"
+                },
+                {
+                    "codigo": "131205",
+                    "nome": "DIRETOR DE SERVICOS DE SAUDE"
+                },
+                {
+                    "codigo": "515305",
+                    "nome": "EDUCADOR SOCIAL"
+                },
+                {
+                    "codigo": "223505",
+                    "nome": "ENFERMEIRO"
+                },
+                {
+                    "codigo": "223565",
+                    "nome": "ENFERMEIRO DA ESTRATÉGIA DE SAÚDE DA FAMÍLIA"
+                },
+                {
+                    "codigo": "223530",
+                    "nome": "ENFERMEIRO DO TRABALHO"
+                },
+                {
+                    "codigo": "223545",
+                    "nome": "ENFERMEIRO OBSTÉTRICO"
+                },
+                {
+                    "codigo": "223550",
+                    "nome": "ENFERMEIRO PSIQUIÁTRICO"
+                },
+                {
+                    "codigo": "223555",
+                    "nome": "ENFERMEIRO PUERICULTOR E PEDIÁTRICO"
+                },
+                {
+                    "codigo": "223560",
+                    "nome": "ENFERMEIRO SANITARISTA"
+                },
+                {
+                    "codigo": "226315",
+                    "nome": "EQUOTERAPEUTA"
+                },
+                {
+                    "codigo": "223405",
+                    "nome": "FARMACÊUTICO"
+                },
+                {
+                    "codigo": "223415",
+                    "nome": "FARMACÊUTICO ANALISTA CLÍNICO"
+                },
+                {
+                    "codigo": "223430",
+                    "nome": "FARMACÊUTICO EM SAÚDE PÚBLICA"
+                },
+                {
+                    "codigo": "223445",
+                    "nome": "FARMACÊUTICO HOSPITALAR E CLÍNICO"
+                },
+                {
+                    "codigo": "223425",
+                    "nome": "FARMACÊUTICO PRÁTICAS INTEGRATIVAS E COMPLEMENTARES"
+                },
+                {
+                    "codigo": "223650",
+                    "nome": "FISIOTERAPEUTA ACUPUNTURISTA"
+                },
+                {
+                    "codigo": "223605",
+                    "nome": "FISIOTERAPEUTA GERAL"
+                },
+                {
+                    "codigo": "223810",
+                    "nome": "FONOAUDIÓLOGO"
+                },
+                {
+                    "codigo": "131210",
+                    "nome": "GERENTE DE SERVICOS DE SAUDE"
+                },
+                {
+                    "codigo": "225105",
+                    "nome": "MÉDICO ACUPUNTURISTA"
+                },
+                {
+                    "codigo": "225110",
+                    "nome": "MÉDICO ALERGISTA E IMUNOLOGISTA"
+                },
+                {
+                    "codigo": "225154",
+                    "nome": "MÉDICO ANTROPOSÓFICO"
+                },
+                {
+                    "codigo": "225120",
+                    "nome": "MÉDICO CARDIOLOGISTA"
+                },
+                {
+                    "codigo": "225125",
+                    "nome": "MÉDICO CLÍNICO"
+                },
+                {
+                    "codigo": "225142",
+                    "nome": "MÉDICO DA ESTRATÉGIA DE SAÚDE DA FAMÍLIA"
+                },
+                {
+                    "codigo": "225130",
+                    "nome": "MÉDICO DE FAMÍLIA E COMUNIDADE"
+                },
+                {
+                    "codigo": "225135",
+                    "nome": "MÉDICO DERMATOLOGISTA"
+                },
+                {
+                    "codigo": "225140",
+                    "nome": "MÉDICO DO TRABALHO"
+                },
+                {
+                    "codigo": "225155",
+                    "nome": "MÉDICO ENDOCRINOLOGISTA E METABOLOGISTA"
+                },
+                {
+                    "codigo": "225160",
+                    "nome": "MÉDICO FISIATRA"
+                },
+                {
+                    "codigo": "225165",
+                    "nome": "MÉDICO GASTROENTEROLOGISTA"
+                },
+                {
+                    "codigo": "225170",
+                    "nome": "MÉDICO GENERALISTA"
+                },
+                {
+                    "codigo": "225180",
+                    "nome": "MÉDICO GERIATRA"
+                },
+                {
+                    "codigo": "225250",
+                    "nome": "MÉDICO GINECOLOGISTA E OBSTETRA"
+                },
+                {
+                    "codigo": "225185",
+                    "nome": "MÉDICO HEMATOLOGISTA"
+                },
+                {
+                    "codigo": "225195",
+                    "nome": "MÉDICO HOMEOPATA"
+                },
+                {
+                    "codigo": "225103",
+                    "nome": "MÉDICO INFECTOLOGISTA"
+                },
+                {
+                    "codigo": "225255",
+                    "nome": "MÉDICO MASTOLOGISTA"
+                },
+                {
+                    "codigo": "225109",
+                    "nome": "MÉDICO NEFROLOGISTA"
+                },
+                {
+                    "codigo": "225350",
+                    "nome": "MÉDICO NEUROFISIOLOGISTA CLÍNICO"
+                },
+                {
+                    "codigo": "225112",
+                    "nome": "MÉDICO NEUROLOGISTA"
+                },
+                {
+                    "codigo": "225118",
+                    "nome": "MÉDICO NUTROLOGISTA"
+                },
+                {
+                    "codigo": "225265",
+                    "nome": "MÉDICO OFTALMOLOGISTA"
+                },
+                {
+                    "codigo": "225121",
+                    "nome": "MÉDICO ONCOLOGISTA CLÍNICO"
+                },
+                {
+                    "codigo": "225270",
+                    "nome": "MÉDICO ORTOPEDISTA E TRAUMATOLOGISTA"
+                },
+                {
+                    "codigo": "225275",
+                    "nome": "MÉDICO OTORRINOLARINGOLOGISTA"
+                },
+                {
+                    "codigo": "225124",
+                    "nome": "MÉDICO PEDIATRA"
+                },
+                {
+                    "codigo": "225127",
+                    "nome": "MÉDICO PNEUMOLOGISTA"
+                },
+                {
+                    "codigo": "225133",
+                    "nome": "MÉDICO PSIQUIATRA"
+                },
+                {
+                    "codigo": "2231F9",
+                    "nome": "MÉDICO RESIDENTE"
+                },
+                {
+                    "codigo": "225136",
+                    "nome": "MÉDICO REUMATOLOGISTA"
+                },
+                {
+                    "codigo": "225139",
+                    "nome": "MÉDICO SANITARISTA"
+                },
+                {
+                    "codigo": "225285",
+                    "nome": "MÉDICO UROLOGISTA"
+                },
+                {
+                    "codigo": "422215",
+                    "nome": "MONITOR DE TELEATENDIMENTO"
+                },
+                {
+                    "codigo": "226305",
+                    "nome": "MUSICOTERAPEUTA"
+                },
+                {
+                    "codigo": "226320",
+                    "nome": "NATURÓLOGO"
+                },
+                {
+                    "codigo": "251545",
+                    "nome": "NEUROPSICÓLOGO"
+                },
+                {
+                    "codigo": "223710",
+                    "nome": "NUTRICIONISTA"
+                },
+                {
+                    "codigo": "422220",
+                    "nome": "OPERADOR DE RADIO CHAMADA"
+                },
+                {
+                    "codigo": "226110",
+                    "nome": "OSTEOPATA"
+                },
+                {
+                    "codigo": "142340",
+                    "nome": "OUVIDOR"
+                },
+                {
+                    "codigo": "239415",
+                    "nome": "PEDAGOGO"
+                },
+                {
+                    "codigo": "234410",
+                    "nome": "PROFESSOR DE EDUCAÇÃO FÍSICA NO ENSINO SUPERIOR"
+                },
+                {
+                    "codigo": "224140",
+                    "nome": "PROFISSIONAL DE EDUCAÇÃO FÍSICA NA SAÚDE"
+                },
+                {
+                    "codigo": "251550",
+                    "nome": "PSICANALISTA"
+                },
+                {
+                    "codigo": "251555",
+                    "nome": "PSICÓLOGO ACUPUNTURISTA"
+                },
+                {
+                    "codigo": "251510",
+                    "nome": "PSICÓLOGO CLÍNICO"
+                },
+                {
+                    "codigo": "251540",
+                    "nome": "PSICÓLOGO DO TRABALHO"
+                },
+                {
+                    "codigo": "251505",
+                    "nome": "PSICÓLOGO EDUCACIONAL"
+                },
+                {
+                    "codigo": "251530",
+                    "nome": "PSICÓLOGO SOCIAL"
+                },
+                {
+                    "codigo": "239425",
+                    "nome": "PSICOPEDAGOGO"
+                },
+                {
+                    "codigo": "226105",
+                    "nome": "QUIROPRAXISTA"
+                },
+                {
+                    "codigo": "422110",
+                    "nome": "RECEPCIONISTA DE CONSULTÓRIO MÉDICO OU DENTÁRIO"
+                },
+                {
+                    "codigo": "422105",
+                    "nome": "RECEPCIONISTA, EM GERAL"
+                },
+                {
+                    "codigo": "1312C1",
+                    "nome": "SANITARISTA"
+                },
+                {
+                    "codigo": "131225",
+                    "nome": "SANITARISTA"
+                },
+                {
+                    "codigo": "322205",
+                    "nome": "TECNICO DE ENFERMAGEM"
+                },
+                {
+                    "codigo": "322245",
+                    "nome": "TECNICO DE ENFERMAGEM DA ESTRATEGIA DE SAUDE DA FAMILIA"
+                },
+                {
+                    "codigo": "322210",
+                    "nome": "TECNICO DE ENFERMAGEM DE TERAPIA INTENSIVA"
+                },
+                {
+                    "codigo": "322255",
+                    "nome": "TÉCNICO EM AGENTE COMUNITÁRIO DE SAÚDE"
+                },
+                {
+                    "codigo": "322405",
+                    "nome": "TECNICO EM SAUDE BUCAL"
+                },
+                {
+                    "codigo": "322425",
+                    "nome": "TÉCNICO EM SAÚDE BUCAL DA ESTRATÉGIA DE SAÚDE DA FAMÍLIA"
+                },
+                {
+                    "codigo": "422205",
+                    "nome": "TELEFONISTA"
+                },
+                {
+                    "codigo": "422210",
+                    "nome": "TELEOPERADOR"
+                },
+                {
+                    "codigo": "223905",
+                    "nome": "TERAPEUTA OCUPACIONAL"
+                },
+                {
+                    "codigo": "515120",
+                    "nome": "VISITADOR SANITÁRIO"
+                }
+            ]
+        },
+        "profissionaisCadastroDomiciliar": {
+            "title": "Tabela de profissionais que tem acesso à Ficha de cadastro domiciliar e territorial",
+            "cbos": [
+                {
+                    "codigo": "515105",
+                    "nome": "AGENTE COMUNITÁRIO DE SAÚDE"
+                },
+                {
+                    "codigo": "515310",
+                    "nome": "AGENTE DE AÇÃO SOCIAL"
+                },
+                {
+                    "codigo": "515140",
+                    "nome": "AGENTE DE COMBATE ÀS ENDEMIAS"
+                },
+                {
+                    "codigo": "352210",
+                    "nome": "AGENTE DE SAÚDE PÚBLICA"
+                },
+                {
+                    "codigo": "515130",
+                    "nome": "AGENTE INDÍGENA DE SANEAMENTO"
+                },
+                {
+                    "codigo": "515125",
+                    "nome": "AGENTE INDÍGENA DE SAÚDE"
+                },
+                {
+                    "codigo": "226310",
+                    "nome": "ARTETERAPEUTA"
+                },
+                {
+                    "codigo": "251605",
+                    "nome": "ASSISTENTE SOCIAL"
+                },
+                {
+                    "codigo": "322230",
+                    "nome": "AUXILIAR DE ENFERMAGEM"
+                },
+                {
+                    "codigo": "322250",
+                    "nome": "AUXILIAR DE ENFERMAGEM DA ESTRATEGIA DE SAUDE DA FAMILIA"
+                },
+                {
+                    "codigo": "322415",
+                    "nome": "AUXILIAR EM SAÚDE BUCAL"
+                },
+                {
+                    "codigo": "322430",
+                    "nome": "AUXILIAR EM SAÚDE BUCAL DA ESTRATÉGIA DE SAÚDE DA FAMÍLIA"
+                },
+                {
+                    "codigo": "223204",
+                    "nome": "CIRURGIÃO DENTISTA - AUDITOR"
+                },
+                {
+                    "codigo": "223208",
+                    "nome": "CIRURGIÃO DENTISTA - CLÍNICO GERAL"
+                },
+                {
+                    "codigo": "223280",
+                    "nome": "CIRURGIÃO DENTISTA - DENTÍSTICA"
+                },
+                {
+                    "codigo": "223284",
+                    "nome": "CIRURGIÃO DENTISTA - DISFUNÇÃO TEMPOROMANDIBULAR E DOR OROFACIAL"
+                },
+                {
+                    "codigo": "223212",
+                    "nome": "CIRURGIÃO DENTISTA - ENDODONTISTA"
+                },
+                {
+                    "codigo": "223216",
+                    "nome": "CIRURGIÃO DENTISTA - EPIDEMIOLOGISTA"
+                },
+                {
+                    "codigo": "223220",
+                    "nome": "CIRURGIÃO DENTISTA - ESTOMATOLOGISTA"
+                },
+                {
+                    "codigo": "223224",
+                    "nome": "CIRURGIÃO DENTISTA - IMPLANTODONTISTA"
+                },
+                {
+                    "codigo": "223228",
+                    "nome": "CIRURGIÃO DENTISTA - ODONTOGERIATRA"
+                },
+                {
+                    "codigo": "223276",
+                    "nome": "CIRURGIÃO DENTISTA - ODONTOLOGIA DO TRABALHO"
+                },
+                {
+                    "codigo": "223288",
+                    "nome": "CIRURGIÃO DENTISTA - ODONTOLOGIA PARA PACIENTES COM NECESSIDADES ESPECIAIS"
+                },
+                {
+                    "codigo": "223232",
+                    "nome": "CIRURGIÃO DENTISTA - ODONTOLOGISTA LEGAL"
+                },
+                {
+                    "codigo": "223236",
+                    "nome": "CIRURGIÃO DENTISTA - ODONTOPEDIATRA"
+                },
+                {
+                    "codigo": "223240",
+                    "nome": "CIRURGIÃO DENTISTA - ORTOPEDISTA E ORTODONTISTA"
+                },
+                {
+                    "codigo": "223244",
+                    "nome": "CIRURGIÃO DENTISTA - PATOLOGISTA BUCAL"
+                },
+                {
+                    "codigo": "223248",
+                    "nome": "CIRURGIÃO DENTISTA - PERIODONTISTA"
+                },
+                {
+                    "codigo": "223252",
+                    "nome": "CIRURGIÃO DENTISTA - PROTESIÓLOGO BUCOMAXILOFACIAL"
+                },
+                {
+                    "codigo": "223256",
+                    "nome": "CIRURGIÃO DENTISTA - PROTESISTA"
+                },
+                {
+                    "codigo": "223260",
+                    "nome": "CIRURGIÃO DENTISTA - RADIOLOGISTA"
+                },
+                {
+                    "codigo": "223264",
+                    "nome": "CIRURGIÃO DENTISTA - REABILITADOR ORAL"
+                },
+                {
+                    "codigo": "223268",
+                    "nome": "CIRURGIÃO DENTISTA - TRAUMATOLOGISTA BUCOMAXILOFACIAL"
+                },
+                {
+                    "codigo": "223272",
+                    "nome": "CIRURGIÃO DENTISTA DE SAÚDE COLETIVA"
+                },
+                {
+                    "codigo": "223293",
+                    "nome": "CIRURGIÃO-DENTISTA DA ESTRATÉGIA DE SAÚDE DA FAMÍLIA"
+                },
+                {
+                    "codigo": "131205",
+                    "nome": "DIRETOR DE SERVICOS DE SAUDE"
+                },
+                {
+                    "codigo": "515305",
+                    "nome": "EDUCADOR SOCIAL"
+                },
+                {
+                    "codigo": "223505",
+                    "nome": "ENFERMEIRO"
+                },
+                {
+                    "codigo": "223565",
+                    "nome": "ENFERMEIRO DA ESTRATÉGIA DE SAÚDE DA FAMÍLIA"
+                },
+                {
+                    "codigo": "223530",
+                    "nome": "ENFERMEIRO DO TRABALHO"
+                },
+                {
+                    "codigo": "223545",
+                    "nome": "ENFERMEIRO OBSTÉTRICO"
+                },
+                {
+                    "codigo": "223550",
+                    "nome": "ENFERMEIRO PSIQUIÁTRICO"
+                },
+                {
+                    "codigo": "223555",
+                    "nome": "ENFERMEIRO PUERICULTOR E PEDIÁTRICO"
+                },
+                {
+                    "codigo": "223560",
+                    "nome": "ENFERMEIRO SANITARISTA"
+                },
+                {
+                    "codigo": "226315",
+                    "nome": "EQUOTERAPEUTA"
+                },
+                {
+                    "codigo": "223405",
+                    "nome": "FARMACÊUTICO"
+                },
+                {
+                    "codigo": "223415",
+                    "nome": "FARMACÊUTICO ANALISTA CLÍNICO"
+                },
+                {
+                    "codigo": "223430",
+                    "nome": "FARMACÊUTICO EM SAÚDE PÚBLICA"
+                },
+                {
+                    "codigo": "223445",
+                    "nome": "FARMACÊUTICO HOSPITALAR E CLÍNICO"
+                },
+                {
+                    "codigo": "223425",
+                    "nome": "FARMACÊUTICO PRÁTICAS INTEGRATIVAS E COMPLEMENTARES"
+                },
+                {
+                    "codigo": "223650",
+                    "nome": "FISIOTERAPEUTA ACUPUNTURISTA"
+                },
+                {
+                    "codigo": "223605",
+                    "nome": "FISIOTERAPEUTA GERAL"
+                },
+                {
+                    "codigo": "223810",
+                    "nome": "FONOAUDIÓLOGO"
+                },
+                {
+                    "codigo": "131210",
+                    "nome": "GERENTE DE SERVICOS DE SAUDE"
+                },
+                {
+                    "codigo": "225105",
+                    "nome": "MÉDICO ACUPUNTURISTA"
+                },
+                {
+                    "codigo": "225110",
+                    "nome": "MÉDICO ALERGISTA E IMUNOLOGISTA"
+                },
+                {
+                    "codigo": "225154",
+                    "nome": "MÉDICO ANTROPOSÓFICO"
+                },
+                {
+                    "codigo": "225120",
+                    "nome": "MÉDICO CARDIOLOGISTA"
+                },
+                {
+                    "codigo": "225125",
+                    "nome": "MÉDICO CLÍNICO"
+                },
+                {
+                    "codigo": "225142",
+                    "nome": "MÉDICO DA ESTRATÉGIA DE SAÚDE DA FAMÍLIA"
+                },
+                {
+                    "codigo": "225130",
+                    "nome": "MÉDICO DE FAMÍLIA E COMUNIDADE"
+                },
+                {
+                    "codigo": "225135",
+                    "nome": "MÉDICO DERMATOLOGISTA"
+                },
+                {
+                    "codigo": "225140",
+                    "nome": "MÉDICO DO TRABALHO"
+                },
+                {
+                    "codigo": "225155",
+                    "nome": "MÉDICO ENDOCRINOLOGISTA E METABOLOGISTA"
+                },
+                {
+                    "codigo": "225160",
+                    "nome": "MÉDICO FISIATRA"
+                },
+                {
+                    "codigo": "225165",
+                    "nome": "MÉDICO GASTROENTEROLOGISTA"
+                },
+                {
+                    "codigo": "225170",
+                    "nome": "MÉDICO GENERALISTA"
+                },
+                {
+                    "codigo": "225180",
+                    "nome": "MÉDICO GERIATRA"
+                },
+                {
+                    "codigo": "225250",
+                    "nome": "MÉDICO GINECOLOGISTA E OBSTETRA"
+                },
+                {
+                    "codigo": "225185",
+                    "nome": "MÉDICO HEMATOLOGISTA"
+                },
+                {
+                    "codigo": "225195",
+                    "nome": "MÉDICO HOMEOPATA"
+                },
+                {
+                    "codigo": "225103",
+                    "nome": "MÉDICO INFECTOLOGISTA"
+                },
+                {
+                    "codigo": "225255",
+                    "nome": "MÉDICO MASTOLOGISTA"
+                },
+                {
+                    "codigo": "225109",
+                    "nome": "MÉDICO NEFROLOGISTA"
+                },
+                {
+                    "codigo": "225350",
+                    "nome": "MÉDICO NEUROFISIOLOGISTA CLÍNICO"
+                },
+                {
+                    "codigo": "225112",
+                    "nome": "MÉDICO NEUROLOGISTA"
+                },
+                {
+                    "codigo": "225118",
+                    "nome": "MÉDICO NUTROLOGISTA"
+                },
+                {
+                    "codigo": "225265",
+                    "nome": "MÉDICO OFTALMOLOGISTA"
+                },
+                {
+                    "codigo": "225121",
+                    "nome": "MÉDICO ONCOLOGISTA CLÍNICO"
+                },
+                {
+                    "codigo": "225270",
+                    "nome": "MÉDICO ORTOPEDISTA E TRAUMATOLOGISTA"
+                },
+                {
+                    "codigo": "225275",
+                    "nome": "MÉDICO OTORRINOLARINGOLOGISTA"
+                },
+                {
+                    "codigo": "225124",
+                    "nome": "MÉDICO PEDIATRA"
+                },
+                {
+                    "codigo": "225127",
+                    "nome": "MÉDICO PNEUMOLOGISTA"
+                },
+                {
+                    "codigo": "225133",
+                    "nome": "MÉDICO PSIQUIATRA"
+                },
+                {
+                    "codigo": "2231F9",
+                    "nome": "MÉDICO RESIDENTE"
+                },
+                {
+                    "codigo": "225136",
+                    "nome": "MÉDICO REUMATOLOGISTA"
+                },
+                {
+                    "codigo": "225139",
+                    "nome": "MÉDICO SANITARISTA"
+                },
+                {
+                    "codigo": "225285",
+                    "nome": "MÉDICO UROLOGISTA"
+                },
+                {
+                    "codigo": "226305",
+                    "nome": "MUSICOTERAPEUTA"
+                },
+                {
+                    "codigo": "226320",
+                    "nome": "NATURÓLOGO"
+                },
+                {
+                    "codigo": "251545",
+                    "nome": "NEUROPSICÓLOGO"
+                },
+                {
+                    "codigo": "223710",
+                    "nome": "NUTRICIONISTA"
+                },
+                {
+                    "codigo": "239415",
+                    "nome": "PEDAGOGO"
+                },
+                {
+                    "codigo": "234410",
+                    "nome": "PROFESSOR DE EDUCAÇÃO FÍSICA NO ENSINO SUPERIOR"
+                },
+                {
+                    "codigo": "224140",
+                    "nome": "PROFISSIONAL DE EDUCAÇÃO FÍSICA NA SAÚDE"
+                },
+                {
+                    "codigo": "251550",
+                    "nome": "PSICANALISTA"
+                },
+                {
+                    "codigo": "251555",
+                    "nome": "PSICÓLOGO ACUPUNTURISTA"
+                },
+                {
+                    "codigo": "251510",
+                    "nome": "PSICÓLOGO CLÍNICO"
+                },
+                {
+                    "codigo": "251540",
+                    "nome": "PSICÓLOGO DO TRABALHO"
+                },
+                {
+                    "codigo": "251505",
+                    "nome": "PSICÓLOGO EDUCACIONAL"
+                },
+                {
+                    "codigo": "251530",
+                    "nome": "PSICÓLOGO SOCIAL"
+                },
+                {
+                    "codigo": "239425",
+                    "nome": "PSICOPEDAGOGO"
+                },
+                {
+                    "codigo": "422110",
+                    "nome": "RECEPCIONISTA DE CONSULTÓRIO MÉDICO OU DENTÁRIO"
+                },
+                {
+                    "codigo": "422105",
+                    "nome": "RECEPCIONISTA, EM GERAL"
+                },
+                {
+                    "codigo": "1312C1",
+                    "nome": "SANITARISTA"
+                },
+                {
+                    "codigo": "131225",
+                    "nome": "SANITARISTA"
+                },
+                {
+                    "codigo": "322205",
+                    "nome": "TECNICO DE ENFERMAGEM"
+                },
+                {
+                    "codigo": "322245",
+                    "nome": "TECNICO DE ENFERMAGEM DA ESTRATEGIA DE SAUDE DA FAMILIA"
+                },
+                {
+                    "codigo": "322210",
+                    "nome": "TECNICO DE ENFERMAGEM DE TERAPIA INTENSIVA"
+                },
+                {
+                    "codigo": "322255",
+                    "nome": "TÉCNICO EM AGENTE COMUNITÁRIO DE SAÚDE"
+                },
+                {
+                    "codigo": "322405",
+                    "nome": "TECNICO EM SAUDE BUCAL"
+                },
+                {
+                    "codigo": "322425",
+                    "nome": "TÉCNICO EM SAÚDE BUCAL DA ESTRATÉGIA DE SAÚDE DA FAMÍLIA"
+                },
+                {
+                    "codigo": "223905",
+                    "nome": "TERAPEUTA OCUPACIONAL"
+                },
+                {
+                    "codigo": "515120",
+                    "nome": "VISITADOR SANITÁRIO"
+                }
+            ]
+        }
+    },
+    "officialSource": "https://sisaps.saude.gov.br/sistemas/esusaps/docs/guias-preenchimento/cadastros"
+}

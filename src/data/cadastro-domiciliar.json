@@ -1,0 +1,292 @@
+{
+    "formId": "cadastro-domiciliar",
+    "formTitle": "Cadastro Domiciliar e Territorial",
+    "sections": [
+        {
+            "sectionId": "identificacao-domicilio",
+            "sectionTitle": "Identificação do Domicílio",
+            "description": "Dados de localização e identificação do imóvel",
+            "fields": [
+                {
+                    "id": "tipo-imovel",
+                    "label": "Tipo de Imóvel",
+                    "placeholder": "Selecione o tipo de imóvel",
+                    "inputType": "select",
+                    "required": true,
+                    "helpData": {
+                        "title": "Tipo de Imóvel",
+                        "explanation": "Classificação do imóvel cadastrado:\n\n• Domicílio\n• Comércio\n• Terreno baldio\n• Ponto estratégico\n• Escola\n• Creche\n• Abrigo\n• Instituição de longa permanência para idosos\n• Unidade prisional\n• Unidade de medida socioeducativa\n• Delegacia\n• Estabelecimento religioso\n• Outros\n\nO tipo de imóvel determina quais campos adicionais serão habilitados.",
+                        "warning": "Campo Obrigatório. Para domicílios, serão habilitados campos de condições de moradia e famílias.",
+                        "officialSource": "https://sisaps.saude.gov.br/sistemas/esusaps/docs/guias-preenchimento/cadastros"
+                    }
+                },
+                {
+                    "id": "logradouro",
+                    "label": "Logradouro",
+                    "placeholder": "Nome da rua, avenida, etc.",
+                    "inputType": "text",
+                    "required": true,
+                    "helpData": {
+                        "title": "Logradouro",
+                        "explanation": "Nome da rua, avenida, estrada ou via onde se localiza o imóvel.\n\nAo selecionar um logradouro já cadastrado, será possível visualizar os domicílios existentes na via.\n\nPara novos logradouros, é necessário cadastrar primeiro na base do sistema.",
+                        "warning": "Campo Obrigatório. Utilize o nome oficial do logradouro conforme cadastro municipal.",
+                        "officialSource": "https://sisaps.saude.gov.br/sistemas/esusaps/docs/guias-preenchimento/cadastros"
+                    }
+                },
+                {
+                    "id": "numero",
+                    "label": "Número",
+                    "placeholder": "Número do imóvel",
+                    "inputType": "text",
+                    "required": true,
+                    "helpData": {
+                        "title": "Número do Imóvel",
+                        "explanation": "Número de identificação do imóvel no logradouro.\n\nCaso o imóvel não possua número, marcar a opção 'S/N' (sem número).\n\nPara imóveis em áreas rurais ou sem numeração oficial, utilizar referências que facilitem a localização.",
+                        "officialSource": "https://sisaps.saude.gov.br/sistemas/esusaps/docs/guias-preenchimento/cadastros"
+                    }
+                },
+                {
+                    "id": "complemento",
+                    "label": "Complemento",
+                    "placeholder": "Apto, bloco, casa, etc.",
+                    "inputType": "text",
+                    "required": false,
+                    "helpData": {
+                        "title": "Complemento do Endereço",
+                        "explanation": "Informação adicional para identificar o imóvel:\n\n• Número do apartamento\n• Bloco\n• Casa (em vilas)\n• Fundos\n• Lote\n• Quadra\n\nEste campo auxilia na localização precisa do domicílio, especialmente em prédios e conjuntos habitacionais.",
+                        "officialSource": "https://sisaps.saude.gov.br/sistemas/esusaps/docs/guias-preenchimento/cadastros"
+                    }
+                },
+                {
+                    "id": "bairro",
+                    "label": "Bairro",
+                    "placeholder": "Nome do bairro",
+                    "inputType": "text",
+                    "required": true,
+                    "helpData": {
+                        "title": "Bairro",
+                        "explanation": "Nome do bairro ou localidade onde se situa o imóvel.\n\nEm áreas rurais, pode-se informar o nome da comunidade, povoado ou distrito.",
+                        "officialSource": "https://sisaps.saude.gov.br/sistemas/esusaps/docs/guias-preenchimento/cadastros"
+                    }
+                },
+                {
+                    "id": "cep",
+                    "label": "CEP",
+                    "placeholder": "00000-000",
+                    "inputType": "text",
+                    "required": false,
+                    "helpData": {
+                        "title": "Código de Endereçamento Postal (CEP)",
+                        "explanation": "CEP do logradouro, composto por 8 dígitos.\n\nO preenchimento do CEP auxilia na integração com outras bases de dados e na validação do endereço.\n\nEm áreas rurais sem CEP específico, pode-se utilizar o CEP geral do município ou deixar em branco.",
+                        "officialSource": "https://sisaps.saude.gov.br/sistemas/esusaps/docs/guias-preenchimento/cadastros"
+                    }
+                },
+                {
+                    "id": "microarea",
+                    "label": "Microárea",
+                    "placeholder": "Selecione a microárea",
+                    "inputType": "select",
+                    "required": true,
+                    "helpData": {
+                        "title": "Microárea do Domicílio",
+                        "explanation": "A microárea é a subdivisão da área de abrangência da equipe, sob responsabilidade de um Agente Comunitário de Saúde.\n\nPara iniciar um cadastro, é necessário realizar a escolha da microárea.\n\nCada microárea possui um número identificador único dentro da equipe.",
+                        "warning": "Campo Obrigatório. A correta seleção da microárea vincula o domicílio à área de atuação do ACS responsável.",
+                        "officialSource": "https://sisaps.saude.gov.br/sistemas/esusaps/docs/guias-preenchimento/cadastros"
+                    }
+                }
+            ]
+        },
+        {
+            "sectionId": "condicoes-moradia",
+            "sectionTitle": "Condições de Moradia",
+            "description": "Informações sobre a estrutura e condições do domicílio",
+            "fields": [
+                {
+                    "id": "situacao-moradia",
+                    "label": "Situação de Moradia/Posse da Terra",
+                    "placeholder": "Próprio, alugado, cedido...",
+                    "inputType": "select",
+                    "required": false,
+                    "helpData": {
+                        "title": "Situação de Moradia / Posse da Terra",
+                        "explanation": "Situação legal da ocupação do imóvel:\n\n• Próprio\n• Financiado\n• Alugado\n• Arrendado\n• Cedido\n• Ocupação\n• Situação de rua\n• Outra\n\nEsta informação auxilia na identificação de vulnerabilidades sociais e insegurança habitacional.",
+                        "officialSource": "https://sisaps.saude.gov.br/sistemas/esusaps/docs/guias-preenchimento/cadastros"
+                    }
+                },
+                {
+                    "id": "localizacao",
+                    "label": "Localização",
+                    "placeholder": "Urbana / Rural",
+                    "inputType": "select",
+                    "required": true,
+                    "helpData": {
+                        "title": "Localização do Domicílio",
+                        "explanation": "Classificação da localização:\n\n• Urbana: áreas dentro do perímetro urbano\n• Rural: áreas fora do perímetro urbano\n\nA localização influencia em:\n• Estratégias de visita domiciliar\n• Tempo de deslocamento\n• Acesso a serviços\n• Indicadores específicos",
+                        "officialSource": "https://sisaps.saude.gov.br/sistemas/esusaps/docs/guias-preenchimento/cadastros"
+                    }
+                },
+                {
+                    "id": "tipo-domicilio",
+                    "label": "Tipo de Domicílio",
+                    "placeholder": "Casa, apartamento, cômodo...",
+                    "inputType": "select",
+                    "required": false,
+                    "helpData": {
+                        "title": "Tipo de Domicílio",
+                        "explanation": "Classificação do tipo de construção:\n\n• Casa\n• Apartamento\n• Cômodo (quarto, kitnet)\n• Outro\n\nEsta informação auxilia na caracterização das condições de moradia da família.",
+                        "officialSource": "https://sisaps.saude.gov.br/sistemas/esusaps/docs/guias-preenchimento/cadastros"
+                    }
+                },
+                {
+                    "id": "qtd-comodos",
+                    "label": "Quantidade de Cômodos",
+                    "placeholder": "Número de cômodos",
+                    "inputType": "text",
+                    "required": false,
+                    "helpData": {
+                        "title": "Quantidade de Cômodos",
+                        "explanation": "Número total de cômodos do domicílio (incluindo quartos, sala, cozinha, banheiros).\n\nComparado ao número de moradores, indica a condição de adensamento familiar.\n\nAdensamento excessivo pode indicar vulnerabilidade e risco à saúde.",
+                        "officialSource": "https://sisaps.saude.gov.br/sistemas/esusaps/docs/guias-preenchimento/cadastros"
+                    }
+                },
+                {
+                    "id": "tipo-acesso",
+                    "label": "Tipo de Acesso ao Domicílio",
+                    "placeholder": "Pavimento, terra, fluvial...",
+                    "inputType": "select",
+                    "required": false,
+                    "helpData": {
+                        "title": "Tipo de Acesso ao Domicílio",
+                        "explanation": "Condição da via de acesso ao domicílio:\n\n• Pavimento\n• Chão batido\n• Fluvial\n• Outro\n\nEsta informação é importante para planejamento de visitas domiciliares, especialmente em períodos chuvosos.",
+                        "officialSource": "https://sisaps.saude.gov.br/sistemas/esusaps/docs/guias-preenchimento/cadastros"
+                    }
+                },
+                {
+                    "id": "material-paredes",
+                    "label": "Material das Paredes",
+                    "placeholder": "Alvenaria, madeira, taipa...",
+                    "inputType": "select",
+                    "required": false,
+                    "helpData": {
+                        "title": "Material Predominante nas Paredes",
+                        "explanation": "Material principal utilizado na construção das paredes:\n\n• Alvenaria/Tijolo com revestimento\n• Alvenaria/Tijolo sem revestimento\n• Madeira aparelhada\n• Taipa revestida\n• Taipa não revestida\n• Madeira aproveitada\n• Material aproveitado\n• Palha\n• Outro material\n\nIndica a qualidade e segurança da construção.",
+                        "officialSource": "https://sisaps.saude.gov.br/sistemas/esusaps/docs/guias-preenchimento/cadastros"
+                    }
+                },
+                {
+                    "id": "disponibilidade-energia",
+                    "label": "Disponibilidade de Energia Elétrica",
+                    "placeholder": "Sim / Não",
+                    "inputType": "select",
+                    "required": false,
+                    "helpData": {
+                        "title": "Disponibilidade de Energia Elétrica",
+                        "explanation": "Indica se o domicílio possui acesso à energia elétrica.\n\nA falta de energia impacta:\n• Conservação de alimentos\n• Conservação de medicamentos\n• Iluminação e segurança\n• Uso de equipamentos de saúde\n\nDomicílios sem energia elétrica podem indicar extrema vulnerabilidade.",
+                        "officialSource": "https://sisaps.saude.gov.br/sistemas/esusaps/docs/guias-preenchimento/cadastros"
+                    }
+                }
+            ]
+        },
+        {
+            "sectionId": "saneamento",
+            "sectionTitle": "Saneamento",
+            "description": "Condições de abastecimento de água, esgoto e lixo",
+            "fields": [
+                {
+                    "id": "abastecimento-agua",
+                    "label": "Abastecimento de Água",
+                    "placeholder": "Rede pública, poço, cisterna...",
+                    "inputType": "select",
+                    "required": true,
+                    "helpData": {
+                        "title": "Forma de Abastecimento de Água",
+                        "explanation": "Origem principal da água utilizada no domicílio:\n\n• Rede encanada até o domicílio\n• Poço/Nascente no domicílio\n• Cisterna\n• Carro-pipa\n• Outro\n\nÁgua não tratada representa risco de doenças de veiculação hídrica.",
+                        "warning": "Campo Obrigatório. A qualidade da água impacta diretamente a saúde dos moradores.",
+                        "officialSource": "https://sisaps.saude.gov.br/sistemas/esusaps/docs/guias-preenchimento/cadastros"
+                    }
+                },
+                {
+                    "id": "tratamento-agua",
+                    "label": "Tratamento de Água no Domicílio",
+                    "placeholder": "Filtração, fervura, cloração...",
+                    "inputType": "select",
+                    "required": false,
+                    "helpData": {
+                        "title": "Forma de Tratamento de Água no Domicílio",
+                        "explanation": "Tratamento realizado antes do consumo:\n\n• Filtração\n• Fervura\n• Cloração\n• Sem tratamento\n• Outro\n\nMesmo água de rede pública pode necessitar de tratamento adicional em casos de interrupção ou contaminação.",
+                        "officialSource": "https://sisaps.saude.gov.br/sistemas/esusaps/docs/guias-preenchimento/cadastros"
+                    }
+                },
+                {
+                    "id": "forma-escoamento-banheiro",
+                    "label": "Escoamento do Banheiro ou Sanitário",
+                    "placeholder": "Rede pública, fossa, céu aberto...",
+                    "inputType": "select",
+                    "required": true,
+                    "helpData": {
+                        "title": "Escoamento do Banheiro / Esgotamento Sanitário",
+                        "explanation": "Destino dos dejetos do banheiro:\n\n• Rede coletora de esgoto ou pluvial\n• Fossa séptica\n• Fossa rudimentar\n• Direto para rio, lago ou mar\n• Céu aberto\n• Outro\n\nEsgotamento inadequado é fator de risco para diversas doenças.",
+                        "warning": "Campo Obrigatório. Esgoto a céu aberto ou em corpos d'água indica grave risco sanitário.",
+                        "officialSource": "https://sisaps.saude.gov.br/sistemas/esusaps/docs/guias-preenchimento/cadastros"
+                    }
+                },
+                {
+                    "id": "destino-lixo",
+                    "label": "Destino do Lixo",
+                    "placeholder": "Coleta pública, queimado, enterrado...",
+                    "inputType": "select",
+                    "required": true,
+                    "helpData": {
+                        "title": "Destino do Lixo",
+                        "explanation": "Forma de descarte do lixo doméstico:\n\n• Coletado\n• Queimado/Enterrado\n• Céu aberto\n• Outro\n\nLixo inadequadamente descartado pode:\n• Atrair vetores de doenças\n• Contaminar solo e água\n• Causar acidentes\n• Gerar problemas respiratórios",
+                        "warning": "Campo Obrigatório. Orientar sobre descarte adequado quando necessário.",
+                        "officialSource": "https://sisaps.saude.gov.br/sistemas/esusaps/docs/guias-preenchimento/cadastros"
+                    }
+                }
+            ]
+        },
+        {
+            "sectionId": "animais-domicilio",
+            "sectionTitle": "Animais no Domicílio",
+            "description": "Informações sobre animais de estimação",
+            "fields": [
+                {
+                    "id": "possui-animais",
+                    "label": "Possui animais no domicílio?",
+                    "placeholder": "Sim / Não",
+                    "inputType": "select",
+                    "required": false,
+                    "helpData": {
+                        "title": "Animais no Domicílio",
+                        "explanation": "Indica se há animais de estimação ou de criação no domicílio.\n\nQuando marcado sim, será possível informar:\n• Tipo de animal (cão, gato, ave, etc.)\n• Quantidade\n\nInformação relevante para:\n• Controle de zoonoses\n• Vacinação antirrábica\n• Ações de vigilância em saúde",
+                        "officialSource": "https://sisaps.saude.gov.br/sistemas/esusaps/docs/guias-preenchimento/cadastros"
+                    }
+                },
+                {
+                    "id": "qtd-caes",
+                    "label": "Quantidade de Cães",
+                    "placeholder": "Número de cães",
+                    "inputType": "text",
+                    "required": false,
+                    "helpData": {
+                        "title": "Quantidade de Cães",
+                        "explanation": "Número de cães existentes no domicílio.\n\nInformação importante para:\n• Campanhas de vacinação antirrábica\n• Controle de leishmaniose\n• Planejamento de ações de saúde",
+                        "officialSource": "https://sisaps.saude.gov.br/sistemas/esusaps/docs/guias-preenchimento/cadastros"
+                    }
+                },
+                {
+                    "id": "qtd-gatos",
+                    "label": "Quantidade de Gatos",
+                    "placeholder": "Número de gatos",
+                    "inputType": "text",
+                    "required": false,
+                    "helpData": {
+                        "title": "Quantidade de Gatos",
+                        "explanation": "Número de gatos existentes no domicílio.\n\nInformação importante para:\n• Campanhas de vacinação antirrábica\n• Orientações sobre toxoplasmose\n• Planejamento de castração",
+                        "officialSource": "https://sisaps.saude.gov.br/sistemas/esusaps/docs/guias-preenchimento/cadastros"
+                    }
+                }
+            ]
+        }
+    ]
+}

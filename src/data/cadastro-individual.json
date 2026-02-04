@@ -1,0 +1,244 @@
+{
+    "formId": "cadastro-individual",
+    "formTitle": "Cadastro Individual",
+    "introduction": {
+        "notaTecnica": "Nota Técnica Nº 30/2025-CGESCO/DESCO/SAPS/MS",
+        "description": "O componente de vínculo e acompanhamento territorial tem como objetivo fortalecer o processo de territorialização, bem como a análise epidemiológica e demográfica da população adscrita e o cuidado em saúde realizado pelas equipes da Atenção Primária.",
+        "equipesResponsaveis": [
+            "eSF",
+            "eAP",
+            "eSB",
+            "eMulti"
+        ],
+        "avisoImportante": "O cadastro rápido, simplificado no módulo do cidadão, NÃO é considerado válido para aferição deste componente."
+    },
+    "concepts": [
+        {
+            "term": "Pessoa cadastrada",
+            "definition": "Aquela que possui cadastro individual (MICI) e cumpre integralmente os requisitos de validação do Siaps."
+        },
+        {
+            "term": "Pessoa com cadastro completo",
+            "definition": "Aquela que possui cadastro individual (MICI) e cadastro domiciliar e territorial (MICDT) e atende integralmente aos requisitos de validação do Siaps."
+        }
+    ],
+    "sections": [
+        {
+            "sectionId": "passo-a-passo",
+            "sectionTitle": "Passo a Passo do Cadastro",
+            "description": "Fluxo de trabalho para realizar o cadastro no território",
+            "fields": [
+                {
+                    "id": "passo-1-microarea",
+                    "label": "1. Selecionar Microárea",
+                    "placeholder": "Escolha a microárea para iniciar",
+                    "inputType": "select",
+                    "required": true,
+                    "helpData": {
+                        "title": "Passo 1: Escolha da Microárea",
+                        "explanation": "Para iniciar um cadastro, será necessário realizar a escolha da microárea.\n\nAo selecionar um logradouro será possível visualizar os domicílios cadastrados.\n\nA microárea é a subdivisão da área de abrangência da equipe, sob responsabilidade de um Agente Comunitário de Saúde (ACS).",
+                        "warning": "Este é o primeiro passo obrigatório. Sem selecionar a microárea, não é possível prosseguir com o cadastro.",
+                        "officialSource": "https://sisaps.saude.gov.br/sistemas/esusaps/docs/guias-preenchimento/cadastros"
+                    }
+                },
+                {
+                    "id": "passo-2-identificar-domicilio",
+                    "label": "2. Identificar Domicílio",
+                    "placeholder": "Clique na lupa para visualizar",
+                    "inputType": "text",
+                    "required": true,
+                    "helpData": {
+                        "title": "Passo 2: Identificação do Domicílio",
+                        "explanation": "Ao identificar o domicílio para cadastro, deverá clicar na lupa onde será possível visualizar o domicílio que o profissional deseja incluir a família.\n\nO sistema mostrará os domicílios já cadastrados no logradouro selecionado.\n\nCaso o domicílio não exista, será necessário cadastrá-lo primeiro.",
+                        "officialSource": "https://sisaps.saude.gov.br/sistemas/esusaps/docs/guias-preenchimento/cadastros"
+                    }
+                },
+                {
+                    "id": "passo-3-moradores-condicoes",
+                    "label": "3. Quantidade de Moradores e Condições",
+                    "placeholder": "Preencha informações do imóvel",
+                    "inputType": "text",
+                    "required": true,
+                    "helpData": {
+                        "title": "Passo 3: Moradores e Condições de Moradia",
+                        "explanation": "Após o preenchimento e conferência das informações, será necessário incluir:\n\n• Quantidade de moradores\n• Condições de moradia\n• Dados de saneamento\n• Informações do imóvel\n\nEstas informações são essenciais para o Cadastro Domiciliar e Territorial (MICDT).",
+                        "officialSource": "https://sisaps.saude.gov.br/sistemas/esusaps/docs/guias-preenchimento/cadastros"
+                    }
+                },
+                {
+                    "id": "passo-4-telefone",
+                    "label": "4. Atualizar Contatos Telefônicos",
+                    "placeholder": "(00) 00000-0000",
+                    "inputType": "text",
+                    "required": true,
+                    "helpData": {
+                        "title": "Passo 4: Contatos Telefônicos",
+                        "explanation": "É importante atualizar os contatos telefônicos.\n\nO telefone celular é um dado OBRIGATÓRIO para os cadastros.\n\nManter os telefones atualizados permite:\n• Contato para agendamentos\n• Busca ativa\n• Confirmação de consultas\n• Comunicação sobre resultados",
+                        "warning": "Campo Obrigatório: O telefone celular é um dado obrigatório conforme orientação do Ministério da Saúde.",
+                        "officialSource": "https://sisaps.saude.gov.br/sistemas/esusaps/docs/guias-preenchimento/cadastros"
+                    }
+                },
+                {
+                    "id": "passo-5-adicionar-familia",
+                    "label": "5. Adicionar Família ao Imóvel",
+                    "placeholder": "Selecione 'adicionar família ao imóvel'",
+                    "inputType": "text",
+                    "required": true,
+                    "helpData": {
+                        "title": "Passo 5: Adicionar Família",
+                        "explanation": "Ao selecionar \"adicionar família ao imóvel\", preencher os dados solicitados pelo sistema incluindo o Responsável familiar.\n\nO responsável familiar é a pessoa de referência para:\n• Recebimento de informações\n• Contatos da equipe\n• Atualização de dados",
+                        "officialSource": "https://sisaps.saude.gov.br/sistemas/esusaps/docs/guias-preenchimento/cadastros"
+                    }
+                },
+                {
+                    "id": "passo-6-incluir-pessoas",
+                    "label": "6. Incluir Pessoas na Família",
+                    "placeholder": "Adicione os membros da família",
+                    "inputType": "text",
+                    "required": true,
+                    "helpData": {
+                        "title": "Passo 6: Membros da Família",
+                        "explanation": "Após cadastrar a família, será possível incluir as pessoas que pertencem àquela família.\n\nPara cada membro, será necessário preencher:\n• Dados de identificação (CNS/CPF, nome)\n• Data de nascimento\n• Sexo\n• Raça/cor\n• Condições de saúde",
+                        "officialSource": "https://sisaps.saude.gov.br/sistemas/esusaps/docs/guias-preenchimento/cadastros"
+                    }
+                },
+                {
+                    "id": "passo-7-vincular-equipe",
+                    "label": "7. Vincular Cidadão à Equipe",
+                    "placeholder": "Clique nos três pontos > Atualizar cidadão",
+                    "inputType": "text",
+                    "required": true,
+                    "helpData": {
+                        "title": "Passo 7: Vinculação à Equipe",
+                        "explanation": "É NECESSÁRIO vincular o cidadão à equipe.\n\nNo mesmo local, após incluir as pessoas à família, ao selecionar os três pontos, clicar em \"Atualizar cidadão\".\n\nEste passo é fundamental para que o cidadão seja considerado como vinculado à equipe.",
+                        "warning": "Passo Obrigatório: Sem a vinculação à equipe, o cadastro não será contabilizado no componente de vínculo territorial.",
+                        "officialSource": "https://sisaps.saude.gov.br/sistemas/esusaps/docs/guias-preenchimento/cadastros"
+                    }
+                },
+                {
+                    "id": "passo-8-conferir-vinculo",
+                    "label": "8. Conferir Equipe Vinculada",
+                    "placeholder": "Verifique se a equipe está correta",
+                    "inputType": "select",
+                    "required": true,
+                    "helpData": {
+                        "title": "Passo 8: Conferência do Vínculo",
+                        "explanation": "É importante conferir se a equipe vinculada está correta.\n\nCaso necessite alterar:\n1. Selecionar \"Alterar vínculo\"\n2. Escolher a equipe correta\n3. Salvar\n\nApós isso, o cidadão estará devidamente vinculado à equipe responsável pelo seu acompanhamento.",
+                        "warning": "Verifique sempre se a eSF/eAP vinculada é a correta. Erros no vínculo comprometem os indicadores da equipe.",
+                        "officialSource": "https://sisaps.saude.gov.br/sistemas/esusaps/docs/guias-preenchimento/cadastros"
+                    }
+                },
+                {
+                    "id": "passo-9-confirmar-telefone",
+                    "label": "9. Confirmar Telefone Celular",
+                    "placeholder": "Telefone celular obrigatório",
+                    "inputType": "text",
+                    "required": true,
+                    "helpData": {
+                        "title": "Passo 9: Telefone Celular Obrigatório",
+                        "explanation": "O telefone celular é um dado obrigatório para os cadastros.\n\nConfirme que o número está:\n• Correto\n• Atualizado\n• Ativo\n\nEste dado é essencial para a comunicação entre a equipe de saúde e o cidadão.",
+                        "warning": "O cadastro não será considerado completo sem o telefone celular.",
+                        "officialSource": "https://sisaps.saude.gov.br/sistemas/esusaps/docs/guias-preenchimento/cadastros"
+                    }
+                }
+            ]
+        },
+        {
+            "sectionId": "dados-identificacao",
+            "sectionTitle": "Dados de Identificação",
+            "description": "Campos obrigatórios para identificação do cidadão (MICI)",
+            "fields": [
+                {
+                    "id": "cns",
+                    "label": "CNS do Cidadão",
+                    "placeholder": "000 0000 0000 0000",
+                    "inputType": "text",
+                    "required": false,
+                    "helpData": {
+                        "title": "Cartão Nacional de Saúde (CNS)",
+                        "explanation": "O CNS é composto por 15 dígitos numéricos e identifica o usuário no SUS.\n\nTipos:\n• Definitivo: Iniciado com 1, 2 ou 7\n• Provisório: Iniciado com 8 ou 9\n\nO CNS provisório pode ser gerado pelo sistema quando necessário.",
+                        "officialSource": "https://sisaps.saude.gov.br/sistemas/esusaps/docs/guias-preenchimento/cadastros"
+                    }
+                },
+                {
+                    "id": "cpf",
+                    "label": "CPF do Cidadão",
+                    "placeholder": "000.000.000-00",
+                    "inputType": "text",
+                    "required": true,
+                    "helpData": {
+                        "title": "Cadastro de Pessoa Física (CPF)",
+                        "explanation": "O CPF possui 11 dígitos e pode ser utilizado como identificador principal.\n\nO sistema realiza validação automática do dígito verificador.",
+                        "warning": "Campo Obrigatório para novos cadastros.",
+                        "officialSource": "https://sisaps.saude.gov.br/sistemas/esusaps/docs/guias-preenchimento/cadastros"
+                    }
+                },
+                {
+                    "id": "nome-completo",
+                    "label": "Nome Completo",
+                    "placeholder": "Nome completo conforme documento",
+                    "inputType": "text",
+                    "required": true,
+                    "helpData": {
+                        "title": "Nome Completo",
+                        "explanation": "Deve ser preenchido exatamente conforme documento de identificação oficial.\n\n• Não utilizar abreviações\n• Verificar grafia correta\n• Usar letras maiúsculas",
+                        "warning": "Campo Obrigatório. O nome deve corresponder ao documento oficial.",
+                        "officialSource": "https://sisaps.saude.gov.br/sistemas/esusaps/docs/guias-preenchimento/cadastros"
+                    }
+                },
+                {
+                    "id": "data-nascimento",
+                    "label": "Data de Nascimento",
+                    "placeholder": "DD/MM/AAAA",
+                    "inputType": "date",
+                    "required": true,
+                    "helpData": {
+                        "title": "Data de Nascimento",
+                        "explanation": "Data no formato DD/MM/AAAA.\n\nO sistema calcula automaticamente a idade e habilita campos específicos por faixa etária.",
+                        "warning": "Campo Obrigatório.",
+                        "officialSource": "https://sisaps.saude.gov.br/sistemas/esusaps/docs/guias-preenchimento/cadastros"
+                    }
+                },
+                {
+                    "id": "sexo",
+                    "label": "Sexo",
+                    "placeholder": "Masculino / Feminino",
+                    "inputType": "select",
+                    "required": true,
+                    "helpData": {
+                        "title": "Sexo",
+                        "explanation": "Sexo biológico: Masculino ou Feminino.\n\nDetermina a habilitação de campos específicos (ex: gestação para sexo feminino).",
+                        "warning": "Campo Obrigatório.",
+                        "officialSource": "https://sisaps.saude.gov.br/sistemas/esusaps/docs/guias-preenchimento/cadastros"
+                    }
+                },
+                {
+                    "id": "raca-cor",
+                    "label": "Raça/Cor",
+                    "placeholder": "Autodeclaração do cidadão",
+                    "inputType": "select",
+                    "required": true,
+                    "helpData": {
+                        "title": "Raça/Cor Autodeclarada",
+                        "explanation": "Categorias IBGE baseadas na autodeclaração:\n• Branca\n• Preta\n• Amarela\n• Parda\n• Indígena\n\nNUNCA preencher pela percepção do profissional.",
+                        "warning": "Campo Obrigatório. Respeite a autodeclaração.",
+                        "officialSource": "https://sisaps.saude.gov.br/sistemas/esusaps/docs/guias-preenchimento/cadastros"
+                    }
+                },
+                {
+                    "id": "telefone-celular",
+                    "label": "Telefone Celular",
+                    "placeholder": "(00) 00000-0000",
+                    "inputType": "text",
+                    "required": true,
+                    "helpData": {
+                        "title": "Telefone Celular",
+                        "explanation": "Número de celular com DDD.\n\nConforme Nota Técnica Nº 30/2025, o telefone celular é OBRIGATÓRIO para os cadastros.",
+                        "warning": "Campo Obrigatório conforme orientação do Ministério da Saúde.",
+                        "officialSource": "https://sisaps.saude.gov.br/sistemas/esusaps/docs/guias-preenchimento/cadastros"
+                    }
+                }
+            ]
+        }
+    ]
+}

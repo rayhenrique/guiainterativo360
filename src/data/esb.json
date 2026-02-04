@@ -1,0 +1,202 @@
+{
+    "modulo": "esb",
+    "titulo": "Indicadores Equipe de Saúde Bucal",
+    "versao": "2025",
+    "descricao": "Indicadores para acompanhamento das ações realizadas pela equipe de Saúde Bucal (eSB) vinculada à eSF/eAP de referência na Atenção Primária à Saúde.",
+    "periodicidade": {
+        "atualizacao": "Mensal",
+        "monitoramento": "Mensal",
+        "avaliacao": "Quadrimestral"
+    },
+    "officialSource": "https://sisaps.saude.gov.br/sistemas/esusaps/docs/guias-preenchimento/equipeesb",
+    "indicadores": [
+        {
+            "id": "primeira-consulta",
+            "numero": 1,
+            "titulo": "Primeira consulta odontológica programada na APS",
+            "descricao": "Este indicador mensura o acesso da população à primeira consulta odontológica programática realizada pela eSB vinculada à eSF/eAP de referência.",
+            "cbos": [
+                "2232-08 - Cirurgião-Dentista Clínico Geral",
+                "2232-93 - Cirurgião-Dentista da Estratégia Saúde da Família",
+                "2232-72 - Cirurgião-Dentista de Saúde Coletiva"
+            ],
+            "sigtap": [
+                "03.01.01.015-3 - Primeira Consulta Odontológica Programática"
+            ],
+            "passos": [
+                {
+                    "ordem": 1,
+                    "instrucao": "Inclua a pessoa na lista de atendimentos e preencha o SOAP normalmente."
+                },
+                {
+                    "ordem": 2,
+                    "instrucao": "Na 'Finalização do atendimento', selecione 'Primeira consulta odontológica programática' no campo 'Tipo de consulta'.",
+                    "imagem": "figura108-5f520f05c899c1b608cd56043bb73810.png"
+                },
+                {
+                    "ordem": 3,
+                    "instrucao": "Automaticamente será adicionado o procedimento SIGTAP 03.01.01.015-3 no campo 'Procedimentos administrativos'."
+                }
+            ]
+        },
+        {
+            "id": "tratamento-concluido",
+            "numero": 2,
+            "titulo": "Tratamento odontológico concluído na APS",
+            "descricao": "Este indicador considera o total de procedimentos odontológicos individuais preventivos em relação ao total de procedimentos odontológicos individuais realizados pela equipe de Saúde Bucal inserida na APS.",
+            "cbos": [
+                "2232-08 - Cirurgião-Dentista Clínico Geral",
+                "2232-93 - Cirurgião-Dentista da Estratégia Saúde da Família",
+                "2232-72 - Cirurgião-Dentista de Saúde Coletiva",
+                "3224-05 - Técnico em Saúde Bucal",
+                "3224-25 - Técnico em Saúde Bucal da Estratégia de Saúde da Família"
+            ],
+            "passos": [
+                {
+                    "ordem": 1,
+                    "instrucao": "Preencha os dados clínicos do atendimento normalmente."
+                },
+                {
+                    "ordem": 2,
+                    "instrucao": "Na seção 'Finalização do Atendimento', selecione 'Tratamento concluído' no campo 'Conduta'.",
+                    "imagem": "figura109-7d06afb083735c7a4258c0a827b2a2a3.png",
+                    "alerta": "Esta opção só fica habilitada quando o 'Tipo de Consulta' NÃO é uma Consulta de Manutenção."
+                }
+            ]
+        },
+        {
+            "id": "taxa-exodontias",
+            "numero": 3,
+            "titulo": "Taxa de exodontias na APS",
+            "descricao": "Mede a relação entre o total de exodontias e o total de procedimentos preventivos e curativos realizados pelo cirurgião-dentista da eSB inserida na APS.",
+            "cbos": [
+                "2232-08 - Cirurgião-Dentista Clínico Geral",
+                "2232-93 - Cirurgião-Dentista da Estratégia Saúde da Família",
+                "2232-72 - Cirurgião-Dentista de Saúde Coletiva"
+            ],
+            "sigtap": [
+                "04.14.02.013-8 - Exodontia de dente permanente",
+                "04.14.02.014-6 - Exodontia múltipla com alveoloplastia por sextante"
+            ],
+            "passos": [
+                {
+                    "ordem": 1,
+                    "instrucao": "No bloco Plano do SOAP, acesse 'Evoluções Odontológicas', aba 'Odontograma'."
+                },
+                {
+                    "ordem": 2,
+                    "instrucao": "Selecione o nº do dente que fará o procedimento de exodontia.",
+                    "imagem": "figura110-a05583f3d62542672ed234432740f2bc.png"
+                },
+                {
+                    "ordem": 3,
+                    "instrucao": "Na janela aberta, registre o SIGTAP 04.14.02.013-8 no campo 'Procedimentos (Evolução odontológica)'.",
+                    "imagem": "exodontia-c86cdbb6f5f705163778e0deabada677.png"
+                },
+                {
+                    "ordem": 4,
+                    "instrucao": "Para exodontia com alveoloplastia por sextante, registre na aba 'Periodontia' em 'Evoluções odontológicas'.",
+                    "imagem": "figura111-d64bc518a8f0e871e07b09c34906683a.png"
+                }
+            ]
+        },
+        {
+            "id": "escovacao-supervisionada",
+            "numero": 4,
+            "titulo": "Escovação supervisionada na APS",
+            "descricao": "Avaliar a proporção de crianças em faixa etária escolar (6 a 12 anos) que foram beneficiadas pela ação coletiva de escovação dental supervisionada pela equipe de Saúde Bucal (eSB).",
+            "publicoAlvo": "Crianças de 6 a menores de 12 anos",
+            "cbos": [
+                "2232-08 - Cirurgião-Dentista Clínico Geral",
+                "2232-93 - Cirurgião-Dentista da Estratégia Saúde da Família",
+                "2232-72 - Cirurgião-Dentista de Saúde Coletiva",
+                "3224-05 - Técnico em Saúde Bucal",
+                "3224-25 - Técnico em Saúde Bucal da Estratégia de Saúde da Família",
+                "3224-15 - Auxiliar em Saúde Bucal",
+                "3224-30 - Auxiliar em Saúde Bucal da Estratégia de Saúde da Família"
+            ],
+            "modeloInformacao": "Atividade Coletiva (Código 4 - Escovação Dental Supervisionada) com CNS identificado (profissional e cidadão participante).",
+            "passos": [
+                {
+                    "ordem": 1,
+                    "instrucao": "Acesse o módulo de Atividade Coletiva no PEC."
+                },
+                {
+                    "ordem": 2,
+                    "instrucao": "Na seção 'Dados da atividade', selecione 'Avaliação / Procedimento' no campo 'Tipo da Atividade'."
+                },
+                {
+                    "ordem": 3,
+                    "instrucao": "Inclua o público-alvo: crianças de 6 a menores de 12 anos."
+                },
+                {
+                    "ordem": 4,
+                    "instrucao": "Preencha o campo 'Práticas em saúde' com 'Escovação dental supervisionada'.",
+                    "imagem": "figura112-e6666bd92b4744467d9fad762c636c93.png"
+                },
+                {
+                    "ordem": 5,
+                    "instrucao": "Inclua 'Saúde bucal' no campo 'Temas para a saúde'."
+                },
+                {
+                    "ordem": 6,
+                    "instrucao": "Informe o código SIGTAP referente à escovação supervisionada."
+                }
+            ]
+        },
+        {
+            "id": "procedimentos-preventivos",
+            "numero": 5,
+            "titulo": "Procedimentos odontológicos preventivos na APS",
+            "descricao": "Registro de procedimentos odontológicos preventivos realizados pela equipe de Saúde Bucal na APS.",
+            "cbos": [
+                "2232-08 - Cirurgião-Dentista Clínico Geral",
+                "2232-93 - Cirurgião-Dentista da Estratégia Saúde da Família",
+                "2232-72 - Cirurgião-Dentista de Saúde Coletiva",
+                "3224-05 - Técnico em Saúde Bucal",
+                "3224-25 - Técnico em Saúde Bucal da Estratégia de Saúde da Família"
+            ],
+            "passos": [
+                {
+                    "ordem": 1,
+                    "instrucao": "No bloco Plano do SOAP, acesse a aba 'Odontograma' em 'Evoluções Odontológicas'."
+                },
+                {
+                    "ordem": 2,
+                    "instrucao": "Selecione o nº do dente."
+                },
+                {
+                    "ordem": 3,
+                    "instrucao": "Na janela aberta, insira o código SIGTAP do procedimento preventivo no campo 'Procedimentos (evolução odontológica)'.",
+                    "imagem": "figura113-a71d2ccc1aceb88a31a85146287bd2dd.png"
+                }
+            ]
+        },
+        {
+            "id": "tratamento-art",
+            "numero": 6,
+            "titulo": "Tratamento restaurador atraumático na APS",
+            "descricao": "Medir a proporção de procedimentos 'Tratamento Restaurador Atraumático (ART)' em relação ao total de procedimentos restauradores realizados pela equipe de Saúde Bucal (eSB) inserida na APS.",
+            "cbos": [
+                "2232-08 - Cirurgião-Dentista Clínico Geral",
+                "2232-93 - Cirurgião-Dentista da Estratégia Saúde da Família",
+                "2232-72 - Cirurgião-Dentista de Saúde Coletiva"
+            ],
+            "passos": [
+                {
+                    "ordem": 1,
+                    "instrucao": "No bloco Plano do SOAP, acesse a aba 'Odontograma' em 'Evoluções odontológicas'."
+                },
+                {
+                    "ordem": 2,
+                    "instrucao": "Selecione o nº do dente que receberá o tratamento ART."
+                },
+                {
+                    "ordem": 3,
+                    "instrucao": "Na janela aberta, registre o código SIGTAP do ART no campo 'Procedimentos'.",
+                    "imagem": "figura114-3360591af5edb21b6418757378bbb584.png"
+                }
+            ]
+        }
+    ]
+}

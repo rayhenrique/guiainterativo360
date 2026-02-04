@@ -1,0 +1,1504 @@
+{
+    "moduleId": "aps",
+    "moduleTitle": "Equipe de Atenção Primária e Saúde da Família",
+    "subtitle": "Guia de Preenchimento do Prontuário Eletrônico e-SUS APS",
+    "sections": [
+        {
+            "id": "mais-acesso",
+            "title": "Mais Acesso à Atenção Primária à Saúde",
+            "description": "Considera todos os atendimentos com campo de marcação no modelo de informação de Atendimento Individual (presencial, domiciliar e remoto).",
+            "periodicidade": {
+                "atualizacao": "Mensal",
+                "monitoramento": "Mensal",
+                "avaliacao": "Quadrimestral"
+            },
+            "modeloInformacao": {
+                "tipo": "MIAI - Modelo de Informação de Atendimento Individual",
+                "descricao": "Considera o Atendimento Individual (presencial, domiciliar e remoto) com identificação do tipo de demanda."
+            },
+            "cbos": [
+                "2251-42 - Médico da Estratégia de Saúde da Família",
+                "2251-70 - Médico Generalista",
+                "2251-30 - Médico de Família e Comunidade",
+                "2235-65 - Enfermeiro da Estratégia de Saúde da Família",
+                "2235-05 - Enfermeiro"
+            ],
+            "subsections": [
+                {
+                    "id": "demanda-programada",
+                    "title": "1. Demanda Programada",
+                    "description": "Atendimento à pessoa com necessidade de ações programáticas individuais, direcionadas para os ciclos de vida, doenças e agravos prioritários e que necessitam de acompanhamento contínuo.",
+                    "tipos": [
+                        "Consulta agendada programada",
+                        "Cuidado continuado",
+                        "Consulta agendada"
+                    ],
+                    "passos": [
+                        {
+                            "ordem": 1,
+                            "instrucao": "Para registrar uma Demanda Programada, é necessário realizar o agendamento da consulta previamente no Módulo Agenda.",
+                            "imagem": "figura1-fa991dc6c5b82bdcae930d1725db1fe2.png"
+                        },
+                        {
+                            "ordem": 2,
+                            "instrucao": "Selecione o dia e a hora da consulta. Informe a identificação do cidadão (nome, CPF ou CNS). Se o atendimento ocorrer fora da UBS, indique o local.",
+                            "destaque": "O agendamento gera comunicação automática para o cidadão no e-mail registrado no cadastro."
+                        },
+                        {
+                            "ordem": 3,
+                            "instrucao": "Após a chegada na unidade no dia da consulta, a pessoa deve ser inserida na lista de atendimento.",
+                            "imagem": "figura2-48ea5ed1a266888bdff8c6706c046e32.png"
+                        },
+                        {
+                            "ordem": 4,
+                            "instrucao": "Na seção de Finalização do Atendimento, selecione 'Consulta Agendada' ou 'Consulta Agendada programada/cuidado continuado' no campo 'Tipo de Atendimento'.",
+                            "imagem": "figura3-4e02cc24d18e806eb5cde0a87627c340.png"
+                        }
+                    ]
+                },
+                {
+                    "id": "demanda-espontanea",
+                    "title": "2. Demanda Espontânea",
+                    "description": "Atendimento à pessoa com necessidade de saúde que exige atenção imediata, no mesmo dia, sem consulta previamente agendada. Essa necessidade se refere a um quadro de sofrimento agudo, com evolução de risco ou potencialidade de prevenção.",
+                    "tipos": [
+                        "Escuta inicial/orientação",
+                        "Consulta no dia",
+                        "Atendimento de urgência"
+                    ],
+                    "passos": [
+                        {
+                            "ordem": 1,
+                            "instrucao": "Inclua a pessoa diretamente na lista de atendimentos, sem agendamento prévio. Realize a busca pelo nome no campo cidadão e selecione o cadastro corretamente.",
+                            "imagem": "figura4-e2a8f6ed524d10b4120b48dfc4b34446.png",
+                            "alerta": "Verifique atentamente a seleção correta do cidadão na lista para evitar equívocos nos registros."
+                        },
+                        {
+                            "ordem": 2,
+                            "instrucao": "Para Escuta Inicial, clique no primeiro ícone após incluir a pessoa na lista de atendimentos.",
+                            "imagem": "figura5.png"
+                        },
+                        {
+                            "ordem": 3,
+                            "instrucao": "Ou marque a caixa 'Escuta Inicial' antes de adicionar o cidadão para inserir exclusivamente para escuta.",
+                            "imagem": "figura6-33ac9b8205960f7761432c4cf99ab4e5.png"
+                        },
+                        {
+                            "ordem": 4,
+                            "instrucao": "A escuta inicial permite registrar: motivo da consulta, antropometria, sinais vitais, glicemia capilar e classificação de risco/vulnerabilidade.",
+                            "imagem": "figura7-4409541de3b0b99fc2f7360cd96c99d6.png"
+                        },
+                        {
+                            "ordem": 5,
+                            "instrucao": "Ao finalizar a escuta inicial, o cidadão volta para a lista de atendimentos com a classificação realizada.",
+                            "imagem": "figura8.png"
+                        },
+                        {
+                            "ordem": 6,
+                            "instrucao": "O profissional que realizará o atendimento deverá clicar em 'Atender' e registrar através do SOAP. Na finalização, serão exibidas as opções de Tipo de Atendimento.",
+                            "imagem": "figura9.png"
+                        },
+                        {
+                            "ordem": 7,
+                            "instrucao": "Para atendimentos fora da UBS (ex: domicílio), use o Registro tardio de atendimento, preenchendo data, hora e local.",
+                            "imagem": "figura10-d219a5d8e16a39a79b3d371616273d42.png"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "desenvolvimento-infantil",
+            "title": "Cuidado no Desenvolvimento Infantil",
+            "description": "Monitoramento da atenção integral e do cuidado longitudinal no desenvolvimento infantil. Conjunto de boas práticas relacionadas à promoção da saúde e do desenvolvimento infantil nos 02 (dois) primeiros anos de vida.",
+            "cbosConsultas": {
+                "descricao": "Grupos de CBO utilizados para todas as consultas de atendimento individual, presencial ou remoto",
+                "lista": [
+                    "2235 - Enfermeiros",
+                    "2231/2251/2252/2253 - Médicos"
+                ]
+            },
+            "cbosProcedimentos": {
+                "descricao": "Grupos de CBO utilizados para todos os procedimentos listados (exceto procedimentos específicos de puericultura e teleconsulta)",
+                "lista": [
+                    "2235 - Enfermeiros",
+                    "2231/2251/2252/2253 - Médicos",
+                    "2232 - Cirurgiões-dentistas",
+                    "2234 - Farmacêuticos",
+                    "2236 - Fisioterapeutas",
+                    "2238 - Fonoaudiólogos",
+                    "2237 - Nutricionistas",
+                    "2241 - Profissionais de Educação Física",
+                    "3222 - Técnico/Auxiliar de Enfermagem",
+                    "2239 - Terapeutas ocupacionais, ortopedistas e psicomotricistas",
+                    "5151-05 - Agente Comunitário de Saúde",
+                    "3222-55 - Técnico em Agente Comunitário de Saúde"
+                ],
+                "excecoes": [
+                    "03.01.01.026-9 - Avaliação do crescimento na puericultura",
+                    "03.01.01.027-7 - Avaliação do desenvolvimento da criança na puericultura",
+                    "03.01.01.025-0 - Teleconsulta na atenção primária"
+                ]
+            },
+            "boasPraticas": [
+                {
+                    "id": "consulta-30-dias",
+                    "letra": "A",
+                    "titulo": "1ª consulta até 30 dias de vida",
+                    "descricao": "Ter realizado a 1ª consulta presencial por médica(o) ou enfermeira(o), até o 30º dia de vida.",
+                    "cbos": [
+                        "2235 - Enfermeiros",
+                        "2231/2251/2252/2253 - Médicos"
+                    ],
+                    "modeloInformacao": "MIAI - Atendimento Individual, com CNS profissional identificado e alocado conforme códigos das equipes.",
+                    "passos": [
+                        {
+                            "ordem": 1,
+                            "instrucao": "No bloco Objetivo do SOAP, habilite o campo de puericultura para registrar o desenvolvimento da criança.",
+                            "imagem": "figura11-c29773d43f2b9d4c9f46aa19a9716333.png"
+                        },
+                        {
+                            "ordem": 2,
+                            "instrucao": "Registre peso e altura na seção 'Antropometria, sinais vitais e glicemia capilar'.",
+                            "imagem": "figura12-0745a60cfc2b9b15bacb310480410d11.png",
+                            "alerta": "O peso e a altura da criança devem ser registrados no mesmo dia."
+                        },
+                        {
+                            "ordem": 3,
+                            "instrucao": "No bloco Avaliação, preencha CIAP-2 ou CID-10. Ao usar puericultura, são adicionados automaticamente: A98 (Medicina Preventiva/Manutenção da Saúde) e Z001 (Exame de Rotina de Saúde da Criança).",
+                            "imagem": "figura13-5a724a1a25fe83079d65b194083106bf.png"
+                        },
+                        {
+                            "ordem": 4,
+                            "instrucao": "No bloco Plano, os procedimentos são adicionados automaticamente. Ex: ao registrar peso e altura, adiciona-se 01.01.04.002-4. Com perímetro cefálico, adiciona-se 03.01.01.026-9.",
+                            "imagem": "figura14-d7a5bffa92391bdc3674b943b8f9b5ea.png"
+                        }
+                    ]
+                },
+                {
+                    "id": "9-consultas",
+                    "letra": "B",
+                    "titulo": "9 consultas até 2 anos",
+                    "descricao": "Ter pelo menos 09 consultas presenciais ou remotas realizadas por médica(o) ou enfermeira(o) até 2 anos de vida.",
+                    "cbos": [
+                        "2235 - Enfermeiros",
+                        "2231/2251/2252/2253 - Médicos"
+                    ],
+                    "modeloInformacao": "MIAI - Atendimento Individual, com CNS profissional identificado.",
+                    "passos": [
+                        {
+                            "ordem": 1,
+                            "instrucao": "Para teleconsulta, na Finalização do Atendimento, inclua o código 03.01.01.025-0 - Teleconsulta na atenção primária no campo de procedimentos administrativos.",
+                            "imagem": "figura15-026673fbdac7ce319146af9ecc877ede.png"
+                        },
+                        {
+                            "ordem": 2,
+                            "instrucao": "Registre também a 'Forma de participação do cidadão'. Para teleconsulta, pode ser 'Chamada de Vídeo'.",
+                            "dica": "A figura 15 exibe todos os campos a serem preenchidos na Finalização do Atendimento."
+                        }
+                    ]
+                },
+                {
+                    "id": "peso-altura",
+                    "letra": "C",
+                    "titulo": "9 registros peso/altura até 2 anos",
+                    "descricao": "Ter pelo menos 09 registros de peso e altura até os dois anos de vida.",
+                    "cbos": [
+                        "2251/2252/2253/2231 - Médicos",
+                        "2235 - Enfermeiros",
+                        "3222 - Técnico/Auxiliar de Enfermagem ou TACS",
+                        "5151-05 - Agente Comunitário de Saúde"
+                    ],
+                    "modelos": [
+                        {
+                            "tipo": "Atendimento Individual",
+                            "orientacao": "Registros de Peso e Altura do campo específico do PEC."
+                        },
+                        {
+                            "tipo": "Procedimento",
+                            "orientacao": "Registros com códigos SIGTAP especificados (exceto consolidado)."
+                        },
+                        {
+                            "tipo": "Atividade Coletiva",
+                            "orientacao": "Registros no campo 'Antropometria' ou Peso e Altura específico."
+                        },
+                        {
+                            "tipo": "Visita Domiciliar e Territorial",
+                            "orientacao": "Registros de peso e altura no campo específico."
+                        }
+                    ],
+                    "sigtap": [
+                        "01.01.04.002-4 - Avaliação antropométrica",
+                        "01.01.04.008-3 - Medição de peso",
+                        "01.01.04.007-5 - Medição de altura"
+                    ],
+                    "passos": [
+                        {
+                            "ordem": 1,
+                            "instrucao": "Os registros podem ser feitos por nível superior no atendimento individual, ou por qualquer profissional na Escuta Inicial (demanda espontânea) ou pré-atendimento (demanda programada).",
+                            "imagem": "figura16.png"
+                        },
+                        {
+                            "ordem": 2,
+                            "instrucao": "Peso e altura devem ser inseridos no mesmo dia. Os códigos SIGTAP são inseridos automaticamente na seção 'Intervenções e/ou procedimentos clínicos realizados'.",
+                            "imagem": "figura17.png",
+                            "alerta": "Dados de peso e altura devem ser inseridos no mesmo dia!"
+                        }
+                    ],
+                    "appTerritorio": {
+                        "titulo": "Aplicativo e-SUS Território",
+                        "descricao": "ACS/TACS podem registrar peso e altura do cidadão durante visita domiciliar.",
+                        "alerta": "Para ser válido, ambos devem ser registrados com a mesma data, caracterizando coleta simultânea.",
+                        "imagem": "figura19-f692f2f81ee7501daf828bf7aa41706d.png"
+                    }
+                },
+                {
+                    "id": "visitas-domiciliares",
+                    "letra": "D",
+                    "titulo": "2 visitas domiciliares por ACS/TACS",
+                    "descricao": "Ter recebido pelo menos 02 visitas domiciliares realizadas por ACS/TACS, sendo a primeira até os primeiros 30 dias de vida e a segunda até os 6 meses de vida.",
+                    "cbos": [
+                        "5151-05 - Agente Comunitário de Saúde",
+                        "3222-55 - Técnico em Agente Comunitário de Saúde"
+                    ],
+                    "passos": [
+                        {
+                            "ordem": 1,
+                            "instrucao": "No app e-SUS Território, registre a Visita ao Cidadão. Este registro foca nas necessidades específicas do cidadão no contexto familiar e domiciliar.",
+                            "dica": "Mantenha o app atualizado e sincronizado ao menos uma vez por dia."
+                        },
+                        {
+                            "ordem": 2,
+                            "instrucao": "Indique se a visita foi realizada e preencha o campo 'Motivo da visita' selecionando 'recém-nascido' ou 'criança'.",
+                            "imagem": "figura20-68da7ecc7a9c3ade7dd5378463ec6201.png"
+                        },
+                        {
+                            "ordem": 3,
+                            "instrucao": "Durante a visita, podem ser registrados: antropometria, sinais vitais, glicemia capilar e anotações gerais."
+                        }
+                    ],
+                    "avaliacao": "Primeira visita até 30 dias de vida; segunda até 6 meses de vida."
+                },
+                {
+                    "id": "vacinas-crianca",
+                    "letra": "E",
+                    "titulo": "Vacinas da criança",
+                    "descricao": "Ter vacinas contra difteria, tétano, coqueluche, hepatite B, Haemophilus influenzae tipo b, poliomielite, sarampo, caxumba, rubéola e pneumocócica registradas com todas as doses recomendadas.",
+                    "passos": [
+                        {
+                            "ordem": 1,
+                            "instrucao": "Ao adicionar pessoa na lista de atendimentos, clique na caixa 'Vacina'.",
+                            "imagem": "figura21-c43224fe5b91827ab0eba84cd4010e86.png"
+                        },
+                        {
+                            "ordem": 2,
+                            "instrucao": "Clique no ícone de realizar vacinação. Será exibido o calendário vacinal conforme faixa etária.",
+                            "imagem": "figura22-fbf7291305cfa08005ce5dba03d58932.png"
+                        },
+                        {
+                            "ordem": 3,
+                            "instrucao": "Clique no card da dose desejada e escolha 'Transcrição de caderneta' ou 'Aplicar'.",
+                            "imagem": "figura23-a3abb1870fe2ed9e1fca0e1c986d1811.png"
+                        },
+                        {
+                            "ordem": 4,
+                            "instrucao": "Para aplicação: preencha estratégia, grupo de atendimento, lote/fabricante, via de administração e local de aplicação.",
+                            "imagem": "figura24-675ba085b3874986ea244eb788029fe1.png",
+                            "dica": "Para rotina em pessoas sem comorbidades, use grupo 'faixa etária'."
+                        },
+                        {
+                            "ordem": 5,
+                            "instrucao": "Para transcrição de caderneta: apenas a data da aplicação é obrigatória. Lote e fabricante são opcionais.",
+                            "imagem": "figura25-ce514856673b651e564dd77fce2a7dfc.png"
+                        },
+                        {
+                            "ordem": 6,
+                            "instrucao": "Para vacinas em substituição aos esquemas principais, use a aba 'Outras doses e imunobiológicos'.",
+                            "imagem": "figura26-6562153449c71b43157446f1af18a5b1.png"
+                        },
+                        {
+                            "ordem": 7,
+                            "instrucao": "É possível registrar transcrição de caderneta durante atendimentos individuais para outras demandas, selecionando a aba 'Vacinação'.",
+                            "imagem": "figura27-12f300b1ddb69b5869720e71968aed5e.png"
+                        }
+                    ],
+                    "appVacinacao": {
+                        "titulo": "Registro no aplicativo e-SUS Vacinação",
+                        "passos": [
+                            {
+                                "ordem": 1,
+                                "instrucao": "Clique em '+' no canto inferior direito. Informe local de atendimento, nome do imunobiológico e estratégia.",
+                                "imagem": "figura28-eb3704acb3c09a450c064d9ee621d017.png"
+                            },
+                            {
+                                "ordem": 2,
+                                "instrucao": "Preencha os 4 campos obrigatórios: imunobiológico, estratégia (conforme DPNI), fabricante e lote (conforme frasco)."
+                            },
+                            {
+                                "ordem": 3,
+                                "instrucao": "Para múltiplas vacinas, clique em 'Salvar e cadastrar outro'. Caso contrário, clique em 'Salvar'.",
+                                "imagem": "figura29-4ef3f54dc8f05463f5e312726a7f202f.png"
+                            },
+                            {
+                                "ordem": 4,
+                                "instrucao": "Clique em 'Salvar e informar cidadão'. Preencha CPF/CNS, data de nascimento, sexo, dose e grupo de atendimento."
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "id": "gestante-puerpera",
+            "title": "Cuidado da Gestante e Puérpera",
+            "description": "Acompanhamento do pré-natal e puerpério com boas práticas definidas para garantir cuidado integral à gestante.",
+            "boasPraticas": [
+                {
+                    "id": "prenatal-12-semanas",
+                    "letra": "A",
+                    "titulo": "1ª consulta pré-natal até 12 semanas",
+                    "descricao": "Ter realizado a primeira consulta de pré-natal até 12 semanas de gestação.",
+                    "passos": [
+                        {
+                            "ordem": 1,
+                            "instrucao": "No bloco Objetivo, registre a data da última menstruação (DUM) no campo estruturado de data.",
+                            "imagem": "figura30-34bfcce260b33a94f48c13a1f0405b23.png"
+                        },
+                        {
+                            "ordem": 2,
+                            "instrucao": "No bloco Avaliação, use uma codificação CID-10 ou CIAP-2 para gestação. A condição será automaticamente incluída na Lista de Problemas/Condições (LPC).",
+                            "imagem": "figura31-96c28d8413bd19b1102fe8ed4c649942.png"
+                        },
+                        {
+                            "ordem": 3,
+                            "instrucao": "Ao incluir na LPC, são exibidos campos estruturados para pré-natal no bloco Avaliação.",
+                            "dica": "Os códigos rápidos ABP de pré-natal também devem ser considerados."
+                        }
+                    ],
+                    "codigosGestacao": {
+                        "ciap2": [
+                            "W78",
+                            "W79",
+                            "W81",
+                            "W84",
+                            "W85"
+                        ],
+                        "cid10": "O11, O12.0, O12.1, O12.2, O13, O14.0, O14.1, O14.9, O15.0, O15.1, O15.9, O16, O20.0, O20.8, O20.9, O21.0, O21.1, O21.2, O21.8, O21.9, O22.0-O22.9, O23.0-O23.9, O24.0-O24.9, O25, O26.0-O26.9, O28.0-O28.9, O29.0-O29.9, O30.0-O30.9, O31.1-O31.8, O32.0-O32.9, O33.0-O33.9, O34.0-O34.9, O35.0-O35.9, O36.0-O36.9, O40, O41.0-O41.9, O43.0-O43.9, O44.0-O44.1, O46.0-O46.9, O47.0-O47.9, O48, O75.2, O75.3, O98-O99, Z32.1, Z33, Z34.0-Z34.9, Z35.0-Z35.9, Z36, Z64.0"
+                    }
+                },
+                {
+                    "id": "7-consultas-prenatal",
+                    "letra": "B",
+                    "titulo": "7 consultas de pré-natal",
+                    "descricao": "Ter pelo menos 07 consultas presenciais ou remotas por médica(o) ou enfermeira(o) durante a gestação.",
+                    "cbos": [
+                        "2235 - Enfermeiros",
+                        "2231/2251/2252/2253 - Médicos"
+                    ],
+                    "passos": [
+                        {
+                            "ordem": 1,
+                            "instrucao": "Nas consultas subsequentes, os campos de pré-natal aparecem no Bloco Objetivo através do card 'Habilitar campos de pré-natal'.",
+                            "imagem": "figura32-b6a61a24f79d12c5f573bc44e21b4a87.png"
+                        },
+                        {
+                            "ordem": 2,
+                            "instrucao": "Ao habilitar, automaticamente é utilizado o código de gestação já informado na primeira consulta. Basta preencher os campos de pré-natal para considerar uma consulta."
+                        },
+                        {
+                            "ordem": 3,
+                            "instrucao": "Caso não use campos estruturados, no Bloco Avaliação use 'pesquisar por problemas/condições ativos ou latentes' para selecionar o código da LPC.",
+                            "imagem": "figura33-4fb25a6f18f1dfdd4d8977a9321a276d.png"
+                        }
+                    ]
+                },
+                {
+                    "id": "7-pressao-arterial",
+                    "letra": "C",
+                    "titulo": "7 registros de pressão arterial",
+                    "descricao": "Ter realizado pelo menos 07 registros de pressão arterial durante o período da gestação.",
+                    "passos": [
+                        {
+                            "ordem": 1,
+                            "instrucao": "Os registros podem ser feitos por nível superior na consulta, ou por qualquer profissional na Escuta Inicial ou pré-atendimento.",
+                            "imagem": "figura34-antropometria-gestante.png"
+                        },
+                        {
+                            "ordem": 2,
+                            "instrucao": "O código SIGTAP é inserido automaticamente: 03.01.10.003-9 - Aferição da pressão arterial.",
+                            "imagem": "figura35-d77454ab9259bc31af3e8d1558b97b3a.png"
+                        },
+                        {
+                            "ordem": 3,
+                            "instrucao": "Também pode ser registrado no Módulo de Atividade Coletiva.",
+                            "imagem": "figura36-d8a6c2422bd5b3f623a3cd0208c9e2ae.png"
+                        }
+                    ],
+                    "sigtap": [
+                        "03.01.10.003-9 - Aferição da pressão arterial"
+                    ],
+                    "appTerritorio": {
+                        "titulo": "Aplicativo e-SUS Território",
+                        "descricao": "ACS/TACS podem registrar pressão arterial durante visita domiciliar.",
+                        "imagem": "figura37-territorio-gestante.png"
+                    }
+                },
+                {
+                    "id": "7-peso-altura-gestante",
+                    "letra": "D",
+                    "titulo": "7 registros peso/altura",
+                    "descricao": "Ter realizado pelo menos 07 registros simultâneos de peso e altura durante a gestação.",
+                    "passos": [
+                        {
+                            "ordem": 1,
+                            "instrucao": "Registre peso e altura no bloco Objetivo, na seção 'Antropometria, sinais vitais e glicemia capilar'.",
+                            "imagem": "figura34-06d1309abd474b66c8009023cba47243.png",
+                            "alerta": "Peso e altura devem ser inseridos no mesmo dia!"
+                        },
+                        {
+                            "ordem": 2,
+                            "instrucao": "Os códigos SIGTAP são inseridos automaticamente na seção 'Intervenções e/ou procedimentos clínicos realizados'."
+                        }
+                    ],
+                    "sigtap": [
+                        "01.01.04.002-4 - Avaliação antropométrica",
+                        "01.01.04.008-3 - Medição de peso",
+                        "01.01.04.007-5 - Medição de altura"
+                    ],
+                    "appTerritorio": {
+                        "titulo": "Aplicativo e-SUS Território",
+                        "descricao": "ACS/TACS podem registrar peso e altura durante visita domiciliar. Ambos devem ser registrados com a mesma data.",
+                        "imagem": "figura37-territorio-gestante.png"
+                    }
+                },
+                {
+                    "id": "3-visitas-gestante",
+                    "letra": "E",
+                    "titulo": "3 visitas domiciliares ACS/TACS",
+                    "descricao": "Ter registro de pelo menos 03 visitas domiciliares do ACS/TACS, após a primeira consulta do pré-natal.",
+                    "cbos": [
+                        "5151-05 - Agente Comunitário de Saúde",
+                        "3222-55 - Técnico em Agente Comunitário de Saúde"
+                    ],
+                    "passos": [
+                        {
+                            "ordem": 1,
+                            "instrucao": "No app e-SUS Território, registre a Visita ao Cidadão com foco nas necessidades da gestante."
+                        },
+                        {
+                            "ordem": 2,
+                            "instrucao": "Indique que a visita foi realizada e preencha o 'Motivo da visita' selecionando 'Gestante'.",
+                            "imagem": "figura38-e4c269f3f03edac1d054cc87d4c4fbc4.png",
+                            "dica": "Mantenha o app sincronizado ao menos uma vez por dia."
+                        }
+                    ]
+                },
+                {
+                    "id": "vacina-dtpa",
+                    "letra": "F",
+                    "titulo": "Vacina dTpa a partir da 20ª semana",
+                    "descricao": "Ter vacina acelular contra difteria, tétano, coqueluche (dTpa) registrada a partir da 20ª semana de cada gestação.",
+                    "passos": [
+                        {
+                            "ordem": 1,
+                            "instrucao": "Ao adicionar a gestante na lista de atendimentos, clique na caixa 'Vacina'.",
+                            "imagem": "figura39-8a5625759f189a5175ea0e6b6bfe79a8.png"
+                        },
+                        {
+                            "ordem": 2,
+                            "instrucao": "Após clicar no ícone de vacinação, será exibido o calendário vacinal com vacinas indicadas para gestante.",
+                            "imagem": "figura40-52ce3234d1bf0e43a23f7ec5a2b9e402.png"
+                        },
+                        {
+                            "ordem": 3,
+                            "instrucao": "Clique no card da dTpa e escolha 'Transcrição de caderneta' ou 'Aplicar'.",
+                            "imagem": "figura41-52ce3234d1bf0e43a23f7ec5a2b9e402.png"
+                        },
+                        {
+                            "ordem": 4,
+                            "instrucao": "Para aplicação: preencha estratégia, grupo de atendimento, lote/fabricante, via e local.",
+                            "imagem": "figura42-9c483bf2c0f99477b8edc850b522a3c2.png",
+                            "dica": "Para rotina em gestantes sem comorbidades, use grupo 'gestante'."
+                        },
+                        {
+                            "ordem": 5,
+                            "instrucao": "Para transcrição: apenas a data da aplicação é obrigatória.",
+                            "imagem": "figura43-9c483bf2c0f99477b8edc850b522a3c2.png"
+                        },
+                        {
+                            "ordem": 6,
+                            "instrucao": "Para vacinas substitutas, use a aba 'Outras doses e imunobiológicos'.",
+                            "imagem": "figura44-018ce245f492b07a709c8ab9d449005d.png"
+                        },
+                        {
+                            "ordem": 7,
+                            "instrucao": "Também é possível transcrição durante atendimentos individuais, selecionando a aba 'Vacinação'.",
+                            "imagem": "figura45-a8e52ec181df70cd3af92bd0f5d6ab0a.png"
+                        }
+                    ],
+                    "appVacinacao": {
+                        "titulo": "Registro no aplicativo e-SUS Vacinação",
+                        "passos": [
+                            {
+                                "ordem": 1,
+                                "instrucao": "Clique em '+', informe local, imunobiológico (dTpa) e estratégia.",
+                                "imagem": "figura46-959c5ee0407248d786404c4d6869fd0f.png"
+                            },
+                            {
+                                "ordem": 2,
+                                "instrucao": "Preencha os 4 campos obrigatórios conforme orientações do DPNI."
+                            },
+                            {
+                                "ordem": 3,
+                                "instrucao": "Clique em 'Salvar e informar cidadão'. Preencha dados da gestante e grupo de atendimento.",
+                                "imagem": "figura47-ea65b76db333e37be23d4d7904584bbf.png"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "id": "testes-1-trimestre",
+                    "letra": "G",
+                    "titulo": "Testes rápidos no 1º trimestre",
+                    "descricao": "Ter registro dos testes rápidos ou exames avaliados para sífilis, HIV e hepatites B e C no primeiro trimestre.",
+                    "passos": [
+                        {
+                            "ordem": 1,
+                            "instrucao": "Para teste rápido coletado durante consulta, registre no campo aberto de resultado de exames.",
+                            "imagem": "figura48-ff79a6dd9e9f394e084b97604366e7ed.png"
+                        },
+                        {
+                            "ordem": 2,
+                            "instrucao": "No bloco Plano, inclua o código SIGTAP na seção 'Intervenções e/ou procedimentos clínicos realizados'.",
+                            "imagem": "figura49-0fd61b0b5f1eef947a75d3a2da8e3c71.png"
+                        },
+                        {
+                            "ordem": 3,
+                            "instrucao": "Para solicitação de exames laboratoriais, use a aba 'Solicitação de exames/procedimentos' no bloco Plano.",
+                            "imagem": "figura50-529deb6488562ca61fb51f569c74a1f9.png"
+                        },
+                        {
+                            "ordem": 4,
+                            "instrucao": "Clique em 'Adicionar exame comum', busque pelo nome ou código, preencha a justificativa e salve.",
+                            "imagem": "figura51-da67068cc51295770ef35e6e84654524.png"
+                        },
+                        {
+                            "ordem": 5,
+                            "instrucao": "Para registrar resultados, vá à seção 'Resultados de Exames' no bloco Objetivo.",
+                            "imagem": "figura52-e2ae8b81dd75fd9013964c5686d88c59.png"
+                        },
+                        {
+                            "ordem": 6,
+                            "instrucao": "Clique em 'Expandir' para ver campos obrigatórios. Registre resultado e data de realização.",
+                            "imagem": "figura53-da17c7ab146f0ab69407addcb32e18e8.png"
+                        }
+                    ],
+                    "testesRapidos": [
+                        "02.14.01.004-0 - Teste rápido HIV na gestante/parceiro",
+                        "02.14.01.005-8 - Teste rápido HIV",
+                        "ABPG024 - Teste rápido de HIV",
+                        "02.14.01.007-4 - Teste rápido para sífilis",
+                        "02.14.01.008-2 - Teste rápido sífilis na gestante/parceiro",
+                        "ABPG026 - Teste rápido para sífilis",
+                        "02.14.01.009-0 - Teste rápido hepatite C",
+                        "ABPG025 - Teste rápido para hepatite C",
+                        "02.14.01.010-4 - Teste rápido HBV"
+                    ],
+                    "examesLaboratoriais": [
+                        "02.13.01.078-0 - Detecção rápida carga viral HIV",
+                        "02.13.01.050-0 - Quantificação carga viral HIV (RNA)",
+                        "ABEX018 - Sorologia para HIV",
+                        "02.02.03.109-8 - Teste treponêmico sífilis",
+                        "02.02.03.111-0 - Teste não treponêmico sífilis",
+                        "02.02.03.117-9 - Teste não treponêmico sífilis em gestante",
+                        "ABEX019 - Sorologia sífilis (VDRL)",
+                        "02.02.03.078-4 - Anti-HBC total (hepatite B)",
+                        "02.02.03.098-9 - HBEAG (hepatite B)",
+                        "02.14.01.023-6 - Teste rápido HBsAG em gestante",
+                        "02.02.03.097-0 - HBsAG",
+                        "02.13.01.020-8 - PCR quantitativo hepatite B",
+                        "02.02.03.005-9 - RNA hepatite C (qualitativo)",
+                        "02.02.03.067-9 - Anti-HCV",
+                        "02.14.01.030-9 - Teste rápido hepatite C em gestante"
+                    ]
+                },
+                {
+                    "id": "testes-3-trimestre",
+                    "letra": "H",
+                    "titulo": "Testes rápidos no 3º trimestre",
+                    "descricao": "Ter registro dos testes rápidos ou exames avaliados para sífilis e HIV no terceiro trimestre.",
+                    "passos": [
+                        {
+                            "ordem": 1,
+                            "instrucao": "Mesmos procedimentos da boa prática G, focando em sífilis e HIV."
+                        }
+                    ],
+                    "testesRapidos": [
+                        "02.14.01.004-0 - Teste rápido HIV na gestante/parceiro",
+                        "02.14.01.005-8 - Teste rápido HIV",
+                        "ABPG024 - Teste rápido de HIV",
+                        "02.14.01.007-4 - Teste rápido para sífilis",
+                        "02.14.01.008-2 - Teste rápido sífilis na gestante/parceiro",
+                        "ABPG026 - Teste rápido para sífilis"
+                    ]
+                },
+                {
+                    "id": "consulta-puerperal",
+                    "letra": "I",
+                    "titulo": "Consulta puerperal",
+                    "descricao": "Ter registro de pelo menos 01 consulta presencial ou remota por médica(o) ou enfermeira(o) durante o puerpério.",
+                    "cbos": [
+                        "2235 - Enfermeiros",
+                        "2231/2251/2252/2253 - Médicos"
+                    ],
+                    "passos": [
+                        {
+                            "ordem": 1,
+                            "instrucao": "No bloco Avaliação, utilize um código CIAP-2 ou CID-10 de puerpério."
+                        }
+                    ],
+                    "codigosPuerpério": {
+                        "ciap2": [
+                            "48",
+                            "49",
+                            "P29",
+                            "W18",
+                            "W19",
+                            "W70",
+                            "W90",
+                            "W91",
+                            "W92",
+                            "W93",
+                            "W94",
+                            "W95",
+                            "W96"
+                        ],
+                        "cid10": "F53, F53.0-F53.9, O10.0-O10.9, O15.2, O26.6, O72.2, O72.3, O85, O86.0-O86.8, O87.0-O87.9, O90.0-O90.9, O91.0-O91.2, O92.0-O92.7, O94, O98, O99.8, M83.0, Z39, Z39.1, Z39.2"
+                    },
+                    "nota": "Puerpério: utiliza-se cálculo de 48 semanas após o DUM. Encerramento considera 294 dias (42 sem gestação) + 42 dias puerpério.",
+                    "codigosExclusao": {
+                        "ciap2": [
+                            "48",
+                            "49",
+                            "P29",
+                            "W18",
+                            "W19",
+                            "W70",
+                            "W90",
+                            "W91",
+                            "W92",
+                            "W93",
+                            "W94",
+                            "W95",
+                            "W96"
+                        ],
+                        "cid10": "O02, O021, O03, O04, O05, O06, Z303"
+                    }
+                },
+                {
+                    "id": "visita-puerperal",
+                    "letra": "J",
+                    "titulo": "Visita domiciliar no puerpério",
+                    "descricao": "Ter registro de pelo menos 01 visita domiciliar por ACS/TACS realizada durante o puerpério.",
+                    "cbos": [
+                        "5151-05 - Agente Comunitário de Saúde",
+                        "3222-55 - Técnico em Agente Comunitário de Saúde"
+                    ],
+                    "passos": [
+                        {
+                            "ordem": 1,
+                            "instrucao": "No app e-SUS Território, registre Visita ao Cidadão com motivo 'Puérpera'.",
+                            "imagem": "figura38-e4c269f3f03edac1d054cc87d4c4fbc4.png"
+                        }
+                    ]
+                },
+                {
+                    "id": "saude-bucal-gestante",
+                    "letra": "K",
+                    "titulo": "Atividade em saúde bucal",
+                    "descricao": "Ter pelo menos 01 atividade em saúde bucal realizada por cirurgião-dentista ou TSB durante a gestação.",
+                    "cbos": [
+                        "2232 - Cirurgião Dentista",
+                        "3224 - Técnico em Saúde Bucal (TSB)"
+                    ],
+                    "passos": [
+                        {
+                            "ordem": 1,
+                            "instrucao": "Se a gestante já tem código na LPC, basta realizar atendimento odontológico normalmente, registrando campos obrigatórios."
+                        },
+                        {
+                            "ordem": 2,
+                            "instrucao": "Se não houver código de gestante na LPC, adicione no bloco Avaliação usando CIAP-2 ou CID-10 de gestação.",
+                            "imagem": "figura54-b4323e6de0a604525b3d8eee571d61fa.png"
+                        }
+                    ],
+                    "modeloInformacao": "Modelo de Informação de Atendimento Odontológico Individual"
+                }
+            ]
+        },
+        {
+            "id": "diabetes",
+            "title": "Cuidado da Pessoa com Diabetes",
+            "description": "Avaliar o acesso e monitoramento efetivo do cuidado integral à saúde das pessoas com diabetes, com incentivo à captação precoce e acompanhamento coordenado e contínuo na APS.",
+            "definicao": "Pessoa identificada a partir de atendimento individual com a condição avaliada de diabetes, realizada por enfermeira(o) e/ou médica(o) da APS, no Modelo de Informação de Atendimento Individual (MIAI), em pelo menos uma ocasião desde 2013.",
+            "periodicidade": {
+                "atualizacao": "Mensal",
+                "monitoramento": "Mensal",
+                "avaliacao": "Quadrimestral"
+            },
+            "codigos": {
+                "cid10": [
+                    {
+                        "codigo": "E10",
+                        "descricao": "Diabetes mellitus insulino dependente",
+                        "subcategorias": "E10.0; E10.1; E10.2; E10.3; E10.4; E10.5; E10.6; E10.7; E10.8; E10.9"
+                    },
+                    {
+                        "codigo": "E11",
+                        "descricao": "Diabetes mellitus não insulino-dependente",
+                        "subcategorias": "E11.0; E11.1; E11.2; E11.3; E11.4; E11.5; E11.6; E11.7; E11.8; E11.9"
+                    },
+                    {
+                        "codigo": "E14",
+                        "descricao": "Diabetes mellitus não especificado",
+                        "subcategorias": "E14.0; E14.1; E14.2; E14.3; E14.4; E14.5; E14.6; E14.7; E14.8; E14.9"
+                    }
+                ],
+                "ciap2": [
+                    {
+                        "codigo": "T89",
+                        "descricao": "Diabetes insulino-dependente"
+                    },
+                    {
+                        "codigo": "T90",
+                        "descricao": "Diabetes não insulino-dependente"
+                    }
+                ]
+            },
+            "modelosInformacao": [
+                {
+                    "tipo": "Atendimento Individual",
+                    "orientacao": "Serão considerados os registros no campo 'pressão arterial' (mmHg) específico do PEC ou código SIGTAP."
+                },
+                {
+                    "tipo": "Procedimento",
+                    "orientacao": "Serão considerados os registros com os códigos SIGTAP especificados, com exceção do registro de procedimento consolidado."
+                },
+                {
+                    "tipo": "Atividade Coletiva",
+                    "orientacao": "Serão considerados os registros no campo 'pressão arterial' (mmHg) específico do PEC ou código SIGTAP."
+                },
+                {
+                    "tipo": "Visita Domiciliar e Territorial",
+                    "orientacao": "Serão considerados os registros de pressão arterial no campo específico."
+                }
+            ],
+            "boasPraticas": [
+                {
+                    "id": "consulta-diabetes",
+                    "letra": "A",
+                    "titulo": "1 consulta nos últimos 6 meses",
+                    "descricao": "Ter realizado pelo menos 01 consulta presencial ou remota por médica(o) ou enfermeira(o) nos últimos 6 meses.",
+                    "cbos": [
+                        "2235 - Enfermeiros",
+                        "2231/2251/2252/2253 - Médicos"
+                    ],
+                    "passos": [
+                        {
+                            "ordem": 1,
+                            "instrucao": "No bloco Avaliação do SOAP, informe CIAP-2 ou CID-10 de diabetes na seção 'Problemas e/ou condições'.",
+                            "imagem": "figura55-c1ee19c2c14f72a92a3d25c263c853d7.png"
+                        },
+                        {
+                            "ordem": 2,
+                            "instrucao": "Após informar o código, inclua na Lista de Problemas/Condições (LPC). A partir da versão 5.4.5, a inclusão é automática.",
+                            "imagem": "figura56-ecb76ad9d00c31cce5265bc22af48263.png"
+                        },
+                        {
+                            "ordem": 3,
+                            "instrucao": "Preencha situação, data de início ou idade e clique em Adicionar."
+                        },
+                        {
+                            "ordem": 4,
+                            "instrucao": "Para teleconsulta, na Finalização selecione a forma de participação e inclua código 03.01.01.025-0 - Teleconsulta na atenção primária.",
+                            "imagem": "figura57-5f37bba0d588a38a4a0ed1464e925684.png"
+                        }
+                    ]
+                },
+                {
+                    "id": "pressao-diabetes",
+                    "letra": "B",
+                    "titulo": "1 aferição de PA nos últimos 6 meses",
+                    "descricao": "Ter pelo menos 01 registro de aferição de pressão arterial nos últimos 6 meses.",
+                    "cbos": [
+                        "2235 - Enfermeiros",
+                        "2231/2251/2252/2253 - Médicos",
+                        "2232 - Cirurgiões-dentistas",
+                        "2234 - Farmacêuticos",
+                        "2236 - Fisioterapeutas",
+                        "2238 - Fonoaudiólogos",
+                        "2237 - Nutricionistas",
+                        "2241 - Profissionais de Educação Física",
+                        "3222 - Técnico/Auxiliar de Enfermagem",
+                        "2239 - Terapeutas ocupacionais",
+                        "5151-05 - Agente Comunitário de Saúde",
+                        "3222-55 - Técnico em Agente Comunitário de Saúde"
+                    ],
+                    "passos": [
+                        {
+                            "ordem": 1,
+                            "instrucao": "Registre no bloco Objetivo, seção 'Antropometria, sinais vitais e glicemia capilar'.",
+                            "imagem": "figura58-a2e9951cdd26574ccfec60e19007537d.png"
+                        },
+                        {
+                            "ordem": 2,
+                            "instrucao": "O código SIGTAP é inserido automaticamente: 03.01.10.003-9 - Aferição da pressão arterial.",
+                            "imagem": "figura59-5d5afc6b4df2e9ba89860c13bfe4dd64.png"
+                        },
+                        {
+                            "ordem": 3,
+                            "instrucao": "Também pode ser registrado no Módulo de Atividade Coletiva.",
+                            "imagem": "figura60-e58e7a61af894cedc6c0bdb9d93fa4f6.png"
+                        }
+                    ],
+                    "sigtap": [
+                        "03.01.10.003-9 - Aferição da pressão arterial"
+                    ],
+                    "appTerritorio": {
+                        "titulo": "Aplicativo e-SUS Território",
+                        "descricao": "ACS/TACS podem registrar pressão arterial durante visita domiciliar.",
+                        "imagem": "figura61-territorio-diabetes.png"
+                    }
+                },
+                {
+                    "id": "peso-altura-diabetes",
+                    "letra": "C",
+                    "titulo": "1 registro peso/altura nos últimos 12 meses",
+                    "descricao": "Ter pelo menos 01 registro simultâneos de peso e altura nos últimos 12 meses.",
+                    "cbos": [
+                        "2235 - Enfermeiros",
+                        "2231/2251/2252/2253 - Médicos",
+                        "2232 - Cirurgiões-dentistas",
+                        "2234 - Farmacêuticos",
+                        "2236 - Fisioterapeutas",
+                        "2238 - Fonoaudiólogos",
+                        "2237 - Nutricionistas",
+                        "2241 - Profissionais de Educação Física",
+                        "3222 - Técnico/Auxiliar de Enfermagem",
+                        "2239 - Terapeutas ocupacionais",
+                        "5151-05 - Agente Comunitário de Saúde",
+                        "3222-55 - Técnico em Agente Comunitário de Saúde"
+                    ],
+                    "passos": [
+                        {
+                            "ordem": 1,
+                            "instrucao": "Registre no bloco Objetivo, seção 'Antropometria, sinais vitais e glicemia capilar'.",
+                            "imagem": "figura58-a2e9951cdd26574ccfec60e19007537d.png",
+                            "alerta": "Peso e altura devem ser inseridos no mesmo dia!"
+                        },
+                        {
+                            "ordem": 2,
+                            "instrucao": "Os códigos SIGTAP são inseridos automaticamente.",
+                            "imagem": "figura59-registro-automatico.png"
+                        }
+                    ],
+                    "sigtap": [
+                        "01.01.04.002-4 - Avaliação antropométrica",
+                        "01.01.04.008-3 - Medição de peso",
+                        "01.01.04.007-5 - Medição de altura"
+                    ],
+                    "appTerritorio": {
+                        "titulo": "Aplicativo e-SUS Território",
+                        "descricao": "ACS/TACS podem registrar peso e altura. Ambos devem ser registrados com a mesma data.",
+                        "imagem": "figura61-territorio-diabetes.png"
+                    }
+                },
+                {
+                    "id": "visitas-diabetes",
+                    "letra": "D",
+                    "titulo": "2 visitas por ACS/TACS nos últimos 12 meses",
+                    "descricao": "Ter pelo menos 02 visitas domiciliares por ACS/TACS, com intervalo mínimo de 30 dias, nos últimos 12 meses.",
+                    "cbos": [
+                        "5151-05 - Agente Comunitário de Saúde",
+                        "3222-55 - Técnico em Agente Comunitário de Saúde"
+                    ],
+                    "passos": [
+                        {
+                            "ordem": 1,
+                            "instrucao": "No app e-SUS Território, registre Visita ao Cidadão focando nas necessidades da pessoa com diabetes."
+                        },
+                        {
+                            "ordem": 2,
+                            "instrucao": "Indique que a visita foi realizada e preencha 'Motivo da visita'. Marque antropometria, sinais vitais ou glicemia se coletados.",
+                            "imagem": "figura62-406be51f01533b2baccb9238939a1270.png",
+                            "dica": "Mantenha o app sincronizado ao menos uma vez por dia."
+                        }
+                    ]
+                },
+                {
+                    "id": "hemoglobina-glicada",
+                    "letra": "E",
+                    "titulo": "1 hemoglobina glicada nos últimos 12 meses",
+                    "descricao": "Ter pelo menos 01 registro de solicitação de hemoglobina glicada solicitada ou avaliada nos últimos 12 meses.",
+                    "sigtap": [
+                        "02.02.01.050-3 - Dosagem de hemoglobina glicosilada"
+                    ],
+                    "passos": [
+                        {
+                            "ordem": 1,
+                            "instrucao": "No bloco Plano, aba 'Solicitação de exames/procedimentos', clique em 'Adicionar exame comum'.",
+                            "imagem": "figura63-74c317f7d629623033bfd4fe563225d6.png"
+                        },
+                        {
+                            "ordem": 2,
+                            "instrucao": "Busque pelo nome ou código 02.02.01.050-3, preencha a justificativa e clique em 'Salvar'.",
+                            "imagem": "figura64-99e3fad9fecf297e1c7ac8c4dd558ad9.png"
+                        },
+                        {
+                            "ordem": 3,
+                            "instrucao": "Para registrar resultado, vá à seção 'Resultados de Exames' no bloco Objetivo.",
+                            "imagem": "figura65-6259ba6a584eae00da903d4adfe673fe.png"
+                        },
+                        {
+                            "ordem": 4,
+                            "instrucao": "Clique em 'Expandir', registre resultado e data de realização, depois 'Salvar'.",
+                            "imagem": "figura66-1b618b62591440742158f0c8cc9723c6.png"
+                        }
+                    ]
+                },
+                {
+                    "id": "pe-diabetico",
+                    "letra": "F",
+                    "titulo": "1 avaliação dos pés nos últimos 12 meses",
+                    "descricao": "Ter pelo menos 01 avaliação dos pés realizada nos últimos 12 meses.",
+                    "sigtap": [
+                        "03.01.04.009-5 - Exame do pé diabético"
+                    ],
+                    "passos": [
+                        {
+                            "ordem": 1,
+                            "instrucao": "Insira os dados clínicos da avaliação do pé diabético no campo aberto do Bloco Objetivo."
+                        },
+                        {
+                            "ordem": 2,
+                            "instrucao": "No bloco Plano, seção 'Intervenções e/ou procedimentos clínicos realizados', adicione o código SIGTAP 03.01.04.009-5.",
+                            "imagem": "figura68-2fd23076101dabb5d535f9d6fddd038f.png"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "hipertensao",
+            "title": "Cuidado da Pessoa com Hipertensão",
+            "description": "Acompanhamento das pessoas com hipertensão arterial na APS, com foco na captação precoce e acompanhamento contínuo.",
+            "definicao": "Para a identificação das pessoas com hipertensão serão utilizadas as condições ou problemas 'ativos' informados no prontuário.",
+            "periodicidade": {
+                "atualizacao": "Mensal",
+                "monitoramento": "Mensal",
+                "avaliacao": "Quadrimestral"
+            },
+            "codigos": {
+                "cid10": "I10; I11; I11.0; I11.9; I12; I12.0; I12.9; I13; I13.0; I13.1; I13.2; I13.9; I15; I15.0; I15.1; I15.2; I15.8; I15.9; O10; O10.0; O10.1; O10.2; O10.3; O10.4; O10.9; O11",
+                "ciap2": [
+                    {
+                        "codigo": "K86",
+                        "descricao": "Hipertensão sem complicações"
+                    },
+                    {
+                        "codigo": "K87",
+                        "descricao": "Hipertensão com complicações"
+                    }
+                ]
+            },
+            "boasPraticas": [
+                {
+                    "id": "consulta-has",
+                    "letra": "A",
+                    "titulo": "1 consulta nos últimos 6 meses",
+                    "descricao": "Ter pelo menos 01 consulta presencial ou remota por médica(o) ou enfermeira(o) nos últimos 6 meses.",
+                    "cbos": [
+                        "2235 - Enfermeiros",
+                        "2231/2251/2252/2253 - Médicos"
+                    ],
+                    "modeloInformacao": "Atendimento Individual, com CNS profissional identificado, alocado conforme os códigos das equipes.",
+                    "passos": [
+                        {
+                            "ordem": 1,
+                            "instrucao": "No bloco Avaliação do SOAP, informe CIAP-2 ou CID-10 de hipertensão na seção 'Problemas e/ou condições'.",
+                            "imagem": "figura68-2fd23076101dabb5d535f9d6fddd038f.png"
+                        },
+                        {
+                            "ordem": 2,
+                            "instrucao": "Após informar o código, inclua na Lista de Problemas/Condições (LPC). A partir da versão 5.4.5, a inclusão é automática.",
+                            "imagem": "figura69-2b328a132f7a6164a49590a44227d2f9.png"
+                        },
+                        {
+                            "ordem": 3,
+                            "instrucao": "Preencha situação, data de início ou idade e clique em Adicionar."
+                        },
+                        {
+                            "ordem": 4,
+                            "instrucao": "Para teleconsulta, na Finalização selecione a forma de participação e inclua código 03.01.01.025-0 - Teleconsulta na atenção primária.",
+                            "imagem": "figura70-4766004e3beb6148d79179ccddafddfa.png"
+                        }
+                    ]
+                },
+                {
+                    "id": "pressao-has",
+                    "letra": "B",
+                    "titulo": "1 medição de PA nos últimos 6 meses",
+                    "descricao": "Ter pelo menos 01 registro de medição da pressão arterial nos últimos 6 meses.",
+                    "cbos": [
+                        "2235 - Enfermeiros",
+                        "2231/2251/2252/2253 - Médicos",
+                        "3222 - Técnico/Auxiliar de Enfermagem",
+                        "3222-55 - Técnico em Agente Comunitário de Saúde",
+                        "5151-05 - Agente Comunitário de Saúde"
+                    ],
+                    "modelosInformacao": [
+                        {
+                            "tipo": "Atendimento Individual",
+                            "orientacao": "Registros no campo 'pressão arterial' (mmHg) específico do PEC ou código SIGTAP."
+                        },
+                        {
+                            "tipo": "Procedimento",
+                            "orientacao": "Registros com códigos SIGTAP, exceto procedimento consolidado."
+                        },
+                        {
+                            "tipo": "Atividade Coletiva",
+                            "orientacao": "Registros no campo 'pressão arterial' (mmHg) específico do PEC ou código SIGTAP."
+                        },
+                        {
+                            "tipo": "Visita Domiciliar e Territorial",
+                            "orientacao": "Registros de pressão arterial no campo específico."
+                        }
+                    ],
+                    "passos": [
+                        {
+                            "ordem": 1,
+                            "instrucao": "Registre no bloco Objetivo, seção 'Antropometria, sinais vitais e glicemia capilar'.",
+                            "imagem": "figura71-6b77f642bd3a6eac90269f93d2a23919.png"
+                        },
+                        {
+                            "ordem": 2,
+                            "instrucao": "O código SIGTAP é inserido automaticamente: 03.01.10.003-9 - Aferição da pressão arterial.",
+                            "imagem": "figura72-4866c1ab28165cfd8e2e37e2d38115be.png"
+                        },
+                        {
+                            "ordem": 3,
+                            "instrucao": "Também pode ser registrado no Módulo de Atividade Coletiva.",
+                            "imagem": "figura73-6296da121011256d11c8aeb9f47f0cac.png"
+                        }
+                    ],
+                    "sigtap": [
+                        "03.01.10.003-9 - Aferição da pressão arterial"
+                    ],
+                    "appTerritorio": {
+                        "titulo": "Aplicativo e-SUS Território",
+                        "descricao": "ACS/TACS podem registrar pressão arterial durante visita domiciliar.",
+                        "imagem": "figura74-5592f10cb73497dcb8a088975464282f.png"
+                    }
+                },
+                {
+                    "id": "peso-altura-has",
+                    "letra": "C",
+                    "titulo": "1 registro peso/altura nos últimos 12 meses",
+                    "descricao": "Ter realizado pelo menos 01 registro simultâneo de peso e altura nos últimos 12 meses.",
+                    "cbos": [
+                        "2235 - Enfermeiros",
+                        "2231/2251/2252/2253 - Médicos",
+                        "3222 - Técnico/Auxiliar de Enfermagem",
+                        "3222-55 - Técnico em Agente Comunitário de Saúde",
+                        "5151-05 - Agente Comunitário de Saúde"
+                    ],
+                    "modelosInformacao": [
+                        {
+                            "tipo": "Atendimento Individual",
+                            "orientacao": "Registros de Peso e Altura do campo específico do PEC."
+                        },
+                        {
+                            "tipo": "Procedimento",
+                            "orientacao": "Registros com códigos SIGTAP, exceto procedimento consolidado."
+                        },
+                        {
+                            "tipo": "Atividade Coletiva",
+                            "orientacao": "Registros no campo 'Antropometria' ou Peso e Altura do campo específico do PEC."
+                        },
+                        {
+                            "tipo": "Visita Domiciliar e Territorial",
+                            "orientacao": "Registros de peso e altura no campo específico."
+                        }
+                    ],
+                    "passos": [
+                        {
+                            "ordem": 1,
+                            "instrucao": "Registre no bloco Objetivo, seção 'Antropometria, sinais vitais e glicemia capilar'.",
+                            "imagem": "figura71-6b77f642bd3a6eac90269f93d2a23919.png",
+                            "alerta": "Peso e altura devem ser inseridos no mesmo dia!"
+                        },
+                        {
+                            "ordem": 2,
+                            "instrucao": "Os códigos SIGTAP são inseridos automaticamente.",
+                            "imagem": "figura72-4866c1ab28165cfd8e2e37e2d38115be.png"
+                        }
+                    ],
+                    "sigtap": [
+                        "01.01.04.002-4 - Avaliação antropométrica",
+                        "01.01.04.008-3 - Medição de peso",
+                        "01.01.04.007-5 - Medição de altura"
+                    ],
+                    "appTerritorio": {
+                        "titulo": "Aplicativo e-SUS Território",
+                        "descricao": "ACS/TACS podem registrar peso e altura. Ambos devem ser registrados com a mesma data.",
+                        "imagem": "figura74-5592f10cb73497dcb8a088975464282f.png"
+                    }
+                },
+                {
+                    "id": "visitas-has",
+                    "letra": "D",
+                    "titulo": "2 visitas por ACS/TACS nos últimos 12 meses",
+                    "descricao": "Ter pelo menos 02 visitas domiciliares por ACS/TACS, com intervalo mínimo de 30 dias, nos últimos 12 meses.",
+                    "cbos": [
+                        "5151-05 - Agente Comunitário de Saúde",
+                        "3222-55 - Técnico em Agente Comunitário de Saúde"
+                    ],
+                    "modeloInformacao": "Registro de visitas domiciliares, com preenchimento do 'motivo da visita'.",
+                    "passos": [
+                        {
+                            "ordem": 1,
+                            "instrucao": "No app e-SUS Território, registre Visita ao Cidadão focando nas necessidades da pessoa com hipertensão."
+                        },
+                        {
+                            "ordem": 2,
+                            "instrucao": "Indique que a visita foi realizada e preencha 'Motivo da visita'. Pode registrar antropometria, sinais vitais e glicemia.",
+                            "imagem": "figura75-295193459c04f251f93555c07157913f.png",
+                            "dica": "Mantenha o app sincronizado ao menos uma vez por dia."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "pessoa-idosa",
+            "title": "Cuidado da Pessoa Idosa",
+            "description": "Acompanhamento da pessoa idosa (60+ anos) na Atenção Primária à Saúde, com foco no cuidado integral e longitudinal.",
+            "definicao": "Pessoa com 60 anos ou mais de idade, identificada a partir de atendimentos registrados na APS.",
+            "periodicidade": {
+                "atualizacao": "Mensal",
+                "monitoramento": "Mensal",
+                "avaliacao": "Quadrimestral"
+            },
+            "boasPraticas": [
+                {
+                    "id": "consulta-idoso",
+                    "letra": "A",
+                    "titulo": "1 consulta nos últimos 12 meses",
+                    "descricao": "Ter realizado pelo menos 01 consulta por médica(o) ou enfermeira(o) presencial ou remota nos últimos 12 meses.",
+                    "cbos": [
+                        "2235 - Enfermeiros",
+                        "2231/2251/2252/2253 - Médicos"
+                    ],
+                    "modeloInformacao": "Atendimento Individual, com CNS profissional identificado, alocado conforme os códigos das equipes.",
+                    "passos": [
+                        {
+                            "ordem": 1,
+                            "instrucao": "Após registrar dados subjetivos, oportunize o registro de peso e altura no bloco Objetivo para alcançar outra boa prática."
+                        },
+                        {
+                            "ordem": 2,
+                            "instrucao": "No bloco Avaliação, registre o problema ou condição usando código CID-10 ou CIAP-2 correspondente à situação clínica.",
+                            "imagem": "figura76-036b31fef5558901d97cc635baaffe0c.png",
+                            "alerta": "É obrigatório registrar pelo menos um código de problema/condição."
+                        },
+                        {
+                            "ordem": 3,
+                            "instrucao": "Na Finalização do atendimento, selecione a forma de participação do cidadão.",
+                            "imagem": "figura77-aae93a42d34cd017014ad5f86afdb137.png"
+                        },
+                        {
+                            "ordem": 4,
+                            "instrucao": "Para teleconsulta, inclua código 03.01.01.025-0 - Teleconsulta na Atenção Primária no campo 'Procedimentos administrativos (SIGTAP)'.",
+                            "imagem": "figura78-teleconsulta-idoso.png"
+                        },
+                        {
+                            "ordem": 5,
+                            "instrucao": "Preencha os campos obrigatórios 'Conduta' e 'Desfecho do atendimento'.",
+                            "imagem": "figura79-af118cdaf5fc48b8c236dda8c5135f15.png"
+                        }
+                    ]
+                },
+                {
+                    "id": "peso-altura-idoso",
+                    "letra": "B",
+                    "titulo": "1 registro peso/altura nos últimos 12 meses",
+                    "descricao": "Ter realizado pelo menos 01 registro simultâneo de peso e altura para avaliação antropométrica nos últimos 12 meses.",
+                    "cbos": [
+                        "2235 - Enfermeiros",
+                        "2231/2251/2252/2253 - Médicos",
+                        "3222 - Técnico/Auxiliar de Enfermagem",
+                        "3222-55 - Técnico em Agente Comunitário de Saúde",
+                        "5151-05 - Agente Comunitário de Saúde"
+                    ],
+                    "passos": [
+                        {
+                            "ordem": 1,
+                            "instrucao": "Registre no bloco Objetivo, seção 'Antropometria, sinais vitais e glicemia capilar'.",
+                            "imagem": "figura80-16437edeb09794d365c7a719f0bc7b2b.png",
+                            "alerta": "Peso e altura devem ser inseridos no mesmo dia!"
+                        },
+                        {
+                            "ordem": 2,
+                            "instrucao": "Os códigos SIGTAP são inseridos automaticamente na seção 'Intervenções e/ou procedimentos clínicos realizados'.",
+                            "imagem": "figura81-2e84c7d1c54596417a150e118d0b5592.png"
+                        },
+                        {
+                            "ordem": 3,
+                            "instrucao": "Também pode ser registrado no Módulo de Atividade Coletiva.",
+                            "imagem": "figura82-918d9f278223bd3f2a36746aff1ff0dc.png"
+                        }
+                    ],
+                    "sigtap": [
+                        "01.01.04.002-4 - Avaliação antropométrica",
+                        "01.01.04.008-3 - Medição de peso",
+                        "01.01.04.007-5 - Medição de altura"
+                    ],
+                    "appTerritorio": {
+                        "titulo": "Aplicativo e-SUS Território",
+                        "descricao": "ACS/TACS podem registrar peso e altura durante visita domiciliar. Ambos devem ser registrados com a mesma data.",
+                        "imagem": "figura83-425104e60cc893fab2edeeea7a764460.png"
+                    }
+                },
+                {
+                    "id": "vacina-influenza",
+                    "letra": "D",
+                    "titulo": "1 dose influenza nos últimos 12 meses",
+                    "descricao": "Ter um registro de uma dose da vacina influenza nos últimos 12 meses.",
+                    "passos": [
+                        {
+                            "ordem": 1,
+                            "instrucao": "Ao adicionar a pessoa idosa na lista de atendimentos, clique na caixa 'Vacina'.",
+                            "imagem": "figura85-3750fe18c8ae9666f220214eb3d7776e.png"
+                        },
+                        {
+                            "ordem": 2,
+                            "instrucao": "Após clicar no ícone de vacinação, será exibido o calendário vacinal conforme a faixa etária.",
+                            "imagem": "figura86-aa7cf87868378dc7299f6369083f9632.png"
+                        },
+                        {
+                            "ordem": 3,
+                            "instrucao": "Clique no card da influenza e escolha 'Transcrição de caderneta' ou 'Aplicar'.",
+                            "imagem": "figura87-c79785e6d5eb8e23a1b77f4140bb9812.png"
+                        },
+                        {
+                            "ordem": 4,
+                            "instrucao": "Para aplicação: preencha estratégia, grupo de atendimento (faixa etária para rotina), lote/fabricante, via e local.",
+                            "imagem": "figura88-4ffc0efb555353136ef6ae07c7013ac1.png",
+                            "dica": "Para rotina em idosos sem comorbidades, use grupo 'faixa etária'."
+                        },
+                        {
+                            "ordem": 5,
+                            "instrucao": "Para transcrição: apenas a data da aplicação é obrigatória.",
+                            "imagem": "figura89-b23969810908632062c39a48762c31b3.png"
+                        },
+                        {
+                            "ordem": 6,
+                            "instrucao": "Para vacinas substitutas, use a aba 'Outras doses e imunobiológicos'.",
+                            "imagem": "figura90-19a3adbdcc00c6e6ffa1b896c104a8d0.png"
+                        },
+                        {
+                            "ordem": 7,
+                            "instrucao": "Também é possível transcrição durante atendimentos individuais, selecionando a aba 'Vacinação'.",
+                            "imagem": "figura91-fb988d9caecec29d5decf45c0fc9e384.png"
+                        }
+                    ],
+                    "appVacinacao": {
+                        "titulo": "Registro no aplicativo e-SUS Vacinação",
+                        "passos": [
+                            {
+                                "ordem": 1,
+                                "instrucao": "Clique em '+', informe local, imunobiológico (Influenza) e estratégia conforme DPNI.",
+                                "imagem": "figura92-067b7ee388c32818126b8d01ecc1fa76.png"
+                            },
+                            {
+                                "ordem": 2,
+                                "instrucao": "Preencha os 4 campos obrigatórios. Fabricante e lote conforme dados do frasco."
+                            },
+                            {
+                                "ordem": 3,
+                                "instrucao": "Clique em 'Salvar e informar cidadão'. Preencha CPF/CNS, data de nascimento, sexo, dose e grupo de atendimento.",
+                                "imagem": "figura93-0044df50e6bc03fa1f10c36d831871b2.png"
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "id": "cancer-mulher",
+            "title": "Cuidado da Mulher na Prevenção do Câncer",
+            "description": "Rastreamento de câncer do colo do útero e mama, vacinação HPV e atenção à saúde sexual/reprodutiva para mulheres e homens transgênero.",
+            "periodicidade": {
+                "atualizacao": "Mensal",
+                "monitoramento": "Mensal",
+                "avaliacao": "Quadrimestral"
+            },
+            "boasPraticas": [
+                {
+                    "id": "colo-utero",
+                    "letra": "A",
+                    "titulo": "Rastreamento câncer colo útero (25-64 anos)",
+                    "descricao": "Ter pelo menos 01 exame de rastreamento para câncer do colo do útero em mulheres e homens transgênero de 25 a 64 anos, coletado, solicitado ou avaliado nos últimos 36 meses.",
+                    "exames": [
+                        "02.03.01.008-6 - Exame citopatológico cérvico vaginal/microflora-rastreamento",
+                        "02.03.01.001-9 - Exame citopatológico cérvico-vaginal/microflora",
+                        "02.01.02.007-6 - Coleta de material do colo do útero para exame molecular de detecção de HPV",
+                        "02.01.02.008-4 - Entrega de material obtido por auto coleta para exame molecular para detecção de HPV",
+                        "02.01.02.003-3 - Coleta de citopatológico de colo uterino"
+                    ],
+                    "passos": [
+                        {
+                            "ordem": 1,
+                            "instrucao": "No bloco 'Plano' do SOAP, clique na aba 'Solicitação de exames/procedimentos'.",
+                            "imagem": "figura94-863b030e3a3fa9ea99272eeb2ca9ed8d.png"
+                        },
+                        {
+                            "ordem": 2,
+                            "instrucao": "Clique em 'Adicionar exame comum'. Busque o exame pelo nome ou código SIGTAP. Preencha obrigatoriamente a justificativa e clique em 'Salvar'.",
+                            "imagem": "figura95-9249d2a0707952a4ed55c6d648bcd084.png"
+                        },
+                        {
+                            "ordem": 3,
+                            "instrucao": "Para registrar resultados, vá à seção 'Resultados de Exames' no bloco 'Objetivo'. Localize o exame pendente ou busque pelo nome.",
+                            "imagem": "figura96-5f02a3b6c47a850792e5854a111b65a8.png"
+                        },
+                        {
+                            "ordem": 4,
+                            "instrucao": "Clique em 'Expandir' para ver campos obrigatórios. Registre o resultado e a data de realização, depois clique em 'Salvar'.",
+                            "imagem": "figura97-5011f57f062bedb2e8212ea01c23629a.png"
+                        }
+                    ]
+                },
+                {
+                    "id": "vacina-hpv",
+                    "letra": "B",
+                    "titulo": "Vacina HPV (meninas 9-14 anos)",
+                    "descricao": "Ter pelo menos 01 dose da vacina HPV para crianças e adolescentes do sexo feminino de 09 a 14 anos.",
+                    "modeloInformacao": "Registro do código da vacina no campo específico do PEC e-SUS APS e correta identificação da criança, com data de nascimento e CPF ou CNS.",
+                    "passos": [
+                        {
+                            "ordem": 1,
+                            "instrucao": "Ao adicionar a pessoa na lista de atendimentos, marque a caixa 'Vacina'.",
+                            "imagem": "figura98-45403aeb7c7807b259ff459755b5b5fa.png"
+                        },
+                        {
+                            "ordem": 2,
+                            "instrucao": "Clique no ícone de realizar vacinação. Será exibido o calendário vacinal conforme faixa etária.",
+                            "imagem": "figura99-4feeb2092f57fc5a5247cc2bb766dbda.png"
+                        },
+                        {
+                            "ordem": 3,
+                            "instrucao": "Clique no card da dose HPV e selecione 'Transcrição de caderneta' ou 'Aplicar'.",
+                            "imagem": "figura100-94167ac0dcd8d228728400380dff9d2c.png"
+                        },
+                        {
+                            "ordem": 4,
+                            "instrucao": "Para aplicação: preencha estratégia, grupo de atendimento, lote/fabricante, via de administração e local.",
+                            "imagem": "figura101-65bbb8ef8b1d75e36f85bf1275a0e2e6.png",
+                            "dica": "Para rotina em pessoas sem comorbidades, use grupo 'faixa etária'."
+                        },
+                        {
+                            "ordem": 5,
+                            "instrucao": "Para transcrição: apenas a data da aplicação é obrigatória. Lote e fabricante são opcionais.",
+                            "imagem": "figura102-3abfbe270e2e72e77e0f740a2c15c51b.png"
+                        },
+                        {
+                            "ordem": 6,
+                            "instrucao": "Para vacinas substitutas, use a aba 'Outras doses e imunobiológicos'.",
+                            "imagem": "figura103-aacb081f29dc283c6d20968cafa75fe8.png"
+                        },
+                        {
+                            "ordem": 7,
+                            "instrucao": "Também é possível transcrição durante atendimentos individuais, selecionando a aba 'Vacinação'.",
+                            "imagem": "figura104-dfc77468e37597de28e9942d5d221310.png"
+                        }
+                    ],
+                    "appVacinacao": {
+                        "titulo": "Registro no aplicativo e-SUS Vacinação",
+                        "passos": [
+                            {
+                                "ordem": 1,
+                                "instrucao": "Clique em '+', informe local, imunobiológico (HPV) e estratégia conforme DPNI.",
+                                "imagem": "figura105-86f87700bbc1bc0a0ca196f5f0505274.png"
+                            },
+                            {
+                                "ordem": 2,
+                                "instrucao": "Preencha os 4 campos obrigatórios. Fabricante e lote conforme dados do frasco."
+                            },
+                            {
+                                "ordem": 3,
+                                "instrucao": "Clique em 'Salvar e informar cidadão'. Preencha CPF/CNS, data de nascimento, sexo, dose e grupo de atendimento.",
+                                "imagem": "figura106-40d405f635f5e7d9e02bdf3548b0eee5.png"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "id": "saude-sexual",
+                    "letra": "C",
+                    "titulo": "Atendimento saúde sexual/reprodutiva (14-69 anos)",
+                    "descricao": "Ter pelo menos 01 atendimento presencial ou remoto sobre saúde sexual e reprodutiva para adolescentes, mulheres e homens transgênero de 14 a 69 anos, nos últimos 12 meses.",
+                    "cbos": [
+                        "2235 - Enfermeiros",
+                        "2231/2251/2252/2253 - Médicos"
+                    ],
+                    "modeloInformacao": "Atendimento Individual, com CNS profissional identificado, alocado conforme os códigos das equipes.",
+                    "passos": [
+                        {
+                            "ordem": 1,
+                            "instrucao": "Após registro de dados subjetivos e objetivos, no Bloco Avaliação registre um código CID-10 ou CIAP-2 referente à saúde sexual/reprodutiva.",
+                            "imagem": "figura107-7f4bfaf08071843d3569f6663240da13.png"
+                        }
+                    ],
+                    "codigosSaudeReprodutiva": {
+                        "cid10": "N80; N800-N809; N91; N910-N915; N92; N920-N926; N93; N930; N938; N939; N94; N940-N949; N95; N950-N959; N96; N97; N970-N979; O03; O04; R102; T742; Y050-Y059; Z123; Z124; Z205; Z206; Z30; Z300-Z309; Z31; Z310-Z319; Z320; Z600; Z630; Z640; Z70; Z700-Z709; Z717; Z725",
+                        "ciap2": "B25; W02; W10; W11; W12; W13; W14; W15; W79; W82; X01; X02; X03; X04; X05; X06; X07; X08; X09; X10; X11; X12; X13; X23; X24; X82; X89; Y14",
+                        "abp": [
+                            "ABP003",
+                            "ABP022",
+                            "ABP023"
+                        ]
+                    }
+                },
+                {
+                    "id": "mamografia",
+                    "letra": "D",
+                    "titulo": "Rastreamento câncer mama (50-69 anos)",
+                    "descricao": "Ter pelo menos 01 exame de rastreamento para câncer de mama em mulheres e homens transgênero de 50 a 69 anos, solicitado ou avaliado nos últimos 24 meses.",
+                    "cbos": [
+                        "2235 - Enfermeiros",
+                        "2231/2251/2252/2253 - Médicos"
+                    ],
+                    "codigos": {
+                        "sigtap": [
+                            "02.04.03.003-0 - Mamografia",
+                            "02.04.03.018-8 - Mamografia bilateral para rastreamento"
+                        ],
+                        "abp": "ABP023 - Rastreamento de câncer de mama"
+                    },
+                    "modelosInformacao": [
+                        {
+                            "tipo": "Atendimento Individual",
+                            "orientacao": "Preenchimento do campo: exames solicitados (S) e avaliados (A)."
+                        },
+                        {
+                            "tipo": "Procedimento",
+                            "orientacao": "Registros com os códigos SIGTAP especificados."
+                        }
+                    ],
+                    "imagem": "mamografia-3843c2ef5537b6fa9c6c588f69db679d.png"
+                }
+            ]
+        }
+    ],
+    "officialSource": "https://sisaps.saude.gov.br/sistemas/esusaps/docs/guias-preenchimento/equipeaps"
+}

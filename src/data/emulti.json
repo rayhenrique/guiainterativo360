@@ -1,0 +1,195 @@
+{
+    "modulo": "emulti",
+    "titulo": "Equipes Multiprofissionais (eMulti)",
+    "descricao": "Indicadores para acompanhamento das ações realizadas pelas Equipes Multiprofissionais (eMulti) na Atenção Primária à Saúde.",
+    "periodicidade": {
+        "atualizacao": "Mensal",
+        "monitoramento": "Mensal",
+        "avaliacao": "Quadrimestral"
+    },
+    "officialSource": "https://sisaps.saude.gov.br/sistemas/esusaps/docs/guias-preenchimento/equipeemulti",
+    "indicadores": [
+        {
+            "id": "media-atendimentos",
+            "titulo": "1. Média de atendimentos por pessoa assistida pela eMulti",
+            "descricao": "Representa a média de atendimentos por pessoa realizados pela eMulti nos últimos 12 meses, independentemente do usuário pertencer ou não à equipe de referência.",
+            "secoes": [
+                {
+                    "titulo": "1.1 Atendimento Individual",
+                    "descricao": "A pessoa deve ser identificada corretamente no prontuário eletrônico e incluída na agenda ou lista de atendimento.",
+                    "cbos": [
+                        "5153-05 - Arte Educador",
+                        "2516-05 - Assistente social",
+                        "2234-45 - Farmacêutico(a) hospitalar e clínico",
+                        "2234-05 - Farmacêutico",
+                        "2236-05 - Fisioterapeuta",
+                        "2238-10 - Fonoaudiólogo(a)",
+                        "2251-05 - Médico(a) acupunturista",
+                        "2251-20 - Médico(a) cardiologista",
+                        "2251-35 - Médico(a) dermatologista",
+                        "2251-55 - Médico(a) endocrinologista",
+                        "2251-80 - Médico(a) geriatra",
+                        "2252-50 - Médico(a) ginecologista / obstetra",
+                        "2251-35 - Médico(a) hansenologista",
+                        "2251-95 - Médico(a) homeopata",
+                        "2251-03 - Médico(a) infectologista",
+                        "2251-24 - Médico(a) pediatra",
+                        "2251-33 - Médico(a) psiquiatra",
+                        "2233-05 - Médico(a) veterinário(a)",
+                        "2237-10 - Nutricionista",
+                        "2241-40 - Profissional de educação física na saúde",
+                        "2515-10 - Psicólogo(a)",
+                        "1312-25 - Sanitarista",
+                        "2239-05 - Terapeuta ocupacional"
+                    ],
+                    "passos": [
+                        {
+                            "ordem": 1,
+                            "instrucao": "Realize o atendimento na aba SOAP."
+                        },
+                        {
+                            "ordem": 2,
+                            "instrucao": "Na finalização, informe o Tipo de atendimento.",
+                            "imagem": "figura115-43a3c4282feb5d22d71d56fc2201241e.png"
+                        },
+                        {
+                            "ordem": 3,
+                            "instrucao": "Informe a Conduta.",
+                            "imagem": "figura116-3416eb00e06d517875f2bad953c521a0.png"
+                        }
+                    ]
+                },
+                {
+                    "titulo": "1.2 Atendimento Coletivo",
+                    "descricao": "Considerada a atividade coletiva realizada (códigos 04, 05, 06 e 07).",
+                    "abas": [
+                        {
+                            "titulo": "Prontuário Eletrônico (PEC)",
+                            "passos": [
+                                {
+                                    "ordem": 1,
+                                    "instrucao": "Clique em 'Atividade em saúde' no menu lateral (Módulo Atividade Coletiva).",
+                                    "imagem": "figura117-52f9e9fd3f111b5693feb124b857938a.png"
+                                },
+                                {
+                                    "ordem": 2,
+                                    "instrucao": "Preencha Data, Turno e nº de participantes.",
+                                    "imagem": "figura118-4257dda008624a7f9feb7212c269f99a.png"
+                                },
+                                {
+                                    "ordem": 3,
+                                    "instrucao": "Inclua os profissionais envolvidos, Tipo de Atividade, Público Alvo e Temas.",
+                                    "imagem": "figura119-b9212171694b57c7c719c78b7a5ba8d3.png"
+                                },
+                                {
+                                    "ordem": 4,
+                                    "instrucao": "Registre os participantes (buscando cadastrados ou informando nome). Pode incluir peso e altura.",
+                                    "imagem": "figura120-454f670fa0d7eee902222ceb4f58492a.png"
+                                }
+                            ]
+                        },
+                        {
+                            "titulo": "Aplicativo Atividade Coletiva",
+                            "passos": [
+                                {
+                                    "ordem": 1,
+                                    "instrucao": "No app, crie um grupo, nova atividade em saúde ou reunião.",
+                                    "imagem": "figura121-cd81792fb0ad17501323e5d0b2e74aca.png"
+                                },
+                                {
+                                    "ordem": 2,
+                                    "instrucao": "Para atividade, cadastre um grupo e selecione 'Atividade em Saúde' no Tipo de Grupo.",
+                                    "imagem": "figura122-a57542401fd455a5df00622ca8d152cd.png"
+                                },
+                                {
+                                    "ordem": 3,
+                                    "instrucao": "Na tela de Nova atividade, preencha Tipo, Temas e participantes.",
+                                    "imagem": "figura123-494c8e4b1c1e7efed3632d0860ede840.png"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "acoes-interprofissionais",
+            "titulo": "2. Ações Interprofissionais da eMulti",
+            "descricao": "Ações voltadas para o cuidado centrado na pessoa realizadas de forma compartilhada entre profissionais da eMulti e outros profissionais.",
+            "secoes": [
+                {
+                    "titulo": "2.1 Atendimento Individual (Compartilhado)",
+                    "descricao": "Realizado simultaneamente por no mínimo 2 profissionais diferentes (pelo menos 1 eMulti).",
+                    "passos": [
+                        {
+                            "ordem": 1,
+                            "instrucao": "Identifique os profissionais envolvidos na seção 'Atendimento compartilhado' da finalização.",
+                            "imagem": "figura124-f95e76725ba2e0e91b0d29d41af139e7.png"
+                        },
+                        {
+                            "ordem": 2,
+                            "instrucao": "Para compartilhamento de cuidado (virtual/assíncrono): No bloco Plano, clique na aba 'Compartilhamento de cuidado'. Informe o CBO.",
+                            "imagem": "figura125-be18ed30b1b75638f498ffe4517ff7a0.png"
+                        },
+                        {
+                            "ordem": 3,
+                            "instrucao": "Preencha Unidade/Serviço, Profissional, CIAP2/CID10, Prioridade e Dados do caso.",
+                            "imagem": "figura126-7cfb842238cfa65e53666d80f61d4492.png"
+                        },
+                        {
+                            "ordem": 4,
+                            "instrucao": "Confirme se o cidadão concorda com o agendamento mediado por tecnologia. Após adicionar, confira o resumo.",
+                            "imagem": "figura127-d2ab7e2f52470c8e82a573493f48d290.png"
+                        }
+                    ]
+                },
+                {
+                    "titulo": "2.2 Atendimento Coletivo (Compartilhado)",
+                    "descricao": "Atividade coletiva realizada por 2 ou mais profissionais (pelo menos 1 eMulti).",
+                    "abas": [
+                        {
+                            "titulo": "Prontuário Eletrônico (PEC)",
+                            "passos": [
+                                {
+                                    "ordem": 1,
+                                    "instrucao": "Registre a atividade compartilhada no módulo Atividade Coletiva.",
+                                    "imagem": "figura128-95852c9f427c99f6d9627e60039dbbf0.png"
+                                },
+                                {
+                                    "ordem": 2,
+                                    "instrucao": "Para Reuniões: Clique em 'Registrar atividade em reunião'.",
+                                    "imagem": "figura129-00eb5ea8050e596c2c8f04c71277bd70.png"
+                                },
+                                {
+                                    "ordem": 3,
+                                    "instrucao": "Selecione o Tipo de atividade (ex: Reunião de equipe) e tema 'Discussão de caso/Projeto terapêutico singular'.",
+                                    "imagem": "figura130-34765186408fc63936b0302464f47b4d.png"
+                                },
+                                {
+                                    "ordem": 4,
+                                    "instrucao": "Registre observações e inclua o cidadão se necessário.",
+                                    "imagem": "figura131-bef4b6d752e04699e122d564d7e0cf40.png"
+                                }
+                            ]
+                        },
+                        {
+                            "titulo": "Aplicativo Atividade Coletiva",
+                            "passos": [
+                                {
+                                    "ordem": 1,
+                                    "instrucao": "Registre a reunião selecionando o Tipo de atividade e temas.",
+                                    "imagem": "figura133-1274a19072825eeca23446406bb1a6c9.png"
+                                },
+                                {
+                                    "ordem": 2,
+                                    "instrucao": "Utilize funcionalidades como visualizar registros, copiar e filtrar.",
+                                    "imagem": "figura134-1ff8e5c54bef03ec44db8a5173e6cf05.png"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
